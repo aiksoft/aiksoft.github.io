@@ -439,11 +439,10 @@
         /*float: left;*/
         clear: both;
         display: none;
-        padding-right: 0;
-        padding-left: 0;
+        padding: 0;
         position: absolute;
         margin: 0;
-        top: 160px;
+        top: 146px;
         left: 0;
         /*
         overflow: hidden;
