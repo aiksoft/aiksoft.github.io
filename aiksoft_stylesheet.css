@@ -435,14 +435,14 @@
     
     #navBar{
         background-color: rgba(255, 160, 122, 0.562);
-        width: 98%;
+        width: 100%;
         /*float: left;*/
         clear: both;
-        padding-right: 1%;
-        padding-left: 1%;
         display: none;
+        padding-right: 0;
+        padding-left: 0;
         position: absolute;
-        top: 160px;
+        top: 150px;
         left: 0;
         /*
         overflow: hidden;
@@ -479,7 +479,7 @@
         /*float: left;*/
         clear: both;
         display: block;
-        margin-right: 5px;
+        padding-left: 10px;
         position: relative;
     }
     
