@@ -442,6 +442,7 @@
         padding-right: 0;
         padding-left: 0;
         position: absolute;
+        margin: 0;
         top: 150px;
         left: 0;
         /*
@@ -475,11 +476,10 @@
     }
     
     #navBar div{
-        width: 100%;
-        /*float: left;*/
+        width: fit-content;
         clear: both;
         display: block;
-        padding-left: 10px;
+        padding-left: 5px;
         position: relative;
     }
     
