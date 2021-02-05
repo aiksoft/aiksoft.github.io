@@ -441,7 +441,7 @@
         display: none;
         padding: 0;
         position: absolute;
-        margin: 0;
+        margin-top: 10px;
         top: 146px;
         left: 0;
         /*
@@ -457,17 +457,18 @@
         max-width: 30px;
         max-height: 32x;
         padding: 5px;
+        margin-bottom: 5px;
     }
 
     #navBarWrapper hr{
-        border: 2px solid white;
+        border: 1px solid white;
         padding: 0;
-        margin: 4px 2px;
+        margin: 6px 2px;
     }
 
     #navBarWrapper p{
         color: white;
-        font-size: 23px;
+        font-size: 24px;
         margin: 0;
         padding: 0;
         display: none;
