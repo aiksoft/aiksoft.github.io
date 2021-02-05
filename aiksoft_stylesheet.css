@@ -541,9 +541,11 @@
     
     #footer{
         clear: both;
-        background-color: rgba(255, 160, 122, 0.562);
+        display: block;
+        /*background-color: rgba(255, 160, 122, 0.562);*/
         padding-top:5px; 
         max-width: 100%; 
+        min-height: 130px;
     }
     
     #footer_div{
@@ -553,6 +555,7 @@
         -moz-box-orient: horizontal;
         -webkit-box-orient: horizontal; 
         */
+        clear: both;
         display: block;
         width: 95%;
         height: fit-content;
@@ -568,7 +571,7 @@
         float: left;
         margin: auto;
         width: 100%;
-        background-color: rgba(255, 160, 122, 0.562);
+        /*background-color: rgba(255, 160, 122, 0.562);*/
     }
     
     .socialMediaHandle{   
