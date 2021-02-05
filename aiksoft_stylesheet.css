@@ -455,7 +455,7 @@
 
     #navBarWrapper{
         max-width: 30px;
-        max-height: 32x;
+        max-height: fit-content;
         padding: 5px;
         margin-bottom: 5px;
     }
