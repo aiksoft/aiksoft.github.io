@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>FancyText</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="description" content="Official homepage of FancyText.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="AikSoft Inc.">
+    <meta name="keywords"
+        content="FancyText, FancyText software, Fancy Text, Fancy Text software, AikSoft, Aikien Softwares, Software company, simple graphics software">
+    <link rel="stylesheet" type="text/css" href="ftHome_css.css" />
+</head>
+
+<body onload="animateHeading()">
+    <div id="headingWrapper">
+        <div id="heading">
+            <img src="icons/FTLogo.PNG" alt="logo" width="120" id="ftLogo"/>
+            <h3 id="moto">...colouring your idea.</h3>
+        </div>
+
+        <div id="navBar">
+            <div id="home">
+                <a href="#" class="headLink" id="homeLink" onclick="loadHome()">Home</a>
+            </div>
+
+            <div id="downloads">
+                <a href="#" class="headLink" id="downloadsLink">Downloads</a>
+                <div class="navLinks">
+                    <a href="#" id="standaloneLink" onclick="showStandalonePage()">Standalone</a><br>
+                    <a href="#" id="selfContainedLink" onclick="showSelfcontainedPage()">Self-contained</a><br>
+                </div>
+            </div>
+
+            <div id="help">
+                <a href="#" class="headLink" id="helpLink">Help</a>
+                <div class="navLinks">
+                    <a href="ftHelp.html">Getting Started</a><br>
+                    <a href="#supp_donate" onclick="showSuppDonate()" id="suppDonateLink">Support/Donate</a><br>
+                    <a href="#credits" onclick="showDedCredit()" id="dedCredLink">Dedication/Credits</a><br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="content">
+        <div id="homeDiv">
+            <!--
+                <h1 id="welcomeMessage">WELCOME TO <span id="ft">FANCYTEXT</span> OFFICIAL HOME PAGE</h1>
+            -->
+
+            <div id="ftScreenshotDiv">
+                <p id="scrnShotPara">
+                    <img src="icons/FT_screenshot3.PNG" alt="FT Screenshot" id="ftPhoto">
+                </p>
+                <p class="label">(FancyText 1.0 GUI)</p>
+            </div>
+
+            <p id="aboutFT">
+                FancyText(FT) is a free, simple and easy-to-use desktop application designed basically to be used to <b>create
+                    pictures
+                    containing fancy (beautiful and elegant) text graphics</b> as well as other graphics such as
+                pictures,
+                simple shapes such as line, circle, square, polygon, etc, complex shapes, which are created from simple
+                shapes, and emojis. The pictures can be saved in JPG, JPEG, GIF or PNG format.
+            </p>
+
+            <div id="samplesWrapper">
+
+                <div class="mySlides" id="firstPic">
+                    <div class="numbertext">1/6</div>
+                    <img src="icons/FT_demo1.png" alt="FT Emoji" style="max-width: 100%;">
+                    <div class="text">(Sample work using FancyText)</div>
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">2/6</div>
+                    <img src="icons/FT_demo2.png" alt="FT Emoji" style="max-width: 100%;">
+                    <div class="text">(Sample work using FancyText)</div>
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">3/6</div>
+                    <img src="icons/FT_demo3.png" alt="FT Emoji" style="max-width: 100%;">
+                    <div class="text">(Sample work using FancyText)</div>
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">4/6</div>
+                    <img src="icons/FT_demo4.png" alt="FT Emoji" style="max-width: 100%;">
+                    <div class="text">(Sample work using FancyText)</div>
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">5/6</div>
+                    <img src="icons/FT_demo5.png" alt="FT Emoji" style="max-width: 100%;">
+                    <div class="text">(Sample work using FancyText)</div>
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">6/6</div>
+                    <img src="icons/FT_demo8.png" alt="FT Emoji" style="max-width: 100%;">
+                    <div class="text">(Sample work using FancyText)</div>
+                </div>
+
+                <input type="button" class="prev" value="&#10094;" onclick="nextSlide(-1)">
+                <input type="button" class="next" value="&#10095;" onclick="nextSlide(1)">
+
+                <!--
+                    <a href="" class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a href="" class="next" onclick="plusSlides(1)">&#10095;</a>
+                -->
+
+            </div>
+            <div style="text-align: center;">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+            </div>
+
+            <p id="langInfo">FancyText is written entirely in the <strong>Java</strong>
+                <img src="icons/java_logo.png" alt="Java Logo" width="50" height="50"> programming language.
+            </p>
+
+            <div id="textInfoWrapper">
+                <p id="textInfo">
+                    An outstanding feature of FancyText is the number of available fonts that the user has at its
+                    disposal.
+                    FancyText comes packaged with eight hundred and sixty one (861) custom fonts in addition to the
+                    fonts
+                    which are locally installed on the user's machine, which is usually above two hundred on most
+                    computers.
+                    Consequently, the user can have well over a thousand fonts to select from when creating beautiful
+                    text
+                    graphics using FancyText.
+                </p>
+
+                <div id="fontSamples">
+                    <p><img src="icons/fontDemo1.PNG" alt="Font Demo" width="150" id="fontPreview"></p>
+                    <input type="button" class="prev2" value="&#10094;" onclick="showNextFontPrev(-1)">
+                    <input type="button" class="next2" value="&#10095;" onclick="showNextFontPrev(1)">
+                    <hr>
+                    <p id="fontPrevLabel">Font preview</p>
+                </div>
+            </div>
+
+            <p class="afterSample" id="effectInfo">
+                Another cool feature of FancyText is the ability to add effects to the text and other graphics. The
+                software has about
+                thirteen (13) basic effects which include, MotionBlur, Lighting, ColorAdjust, Reflection, Perspective,
+                etc., which are fully adjustable and can be applied alone or can be combined to give a variety of very
+                beautiful and complex effect. This feature will also be improved upon in subsequent updates and versions
+                of the software.
+            </p>
+
+            <p id="emojiInfo">
+                Another yet cool feature of FancyText is the ability to add various kinds of emoticons and emojis
+                to your post. This feature will also be periodically updated to make your post more elelegant and
+                give a more vivid expression to your idea or the message you are trying to communicate. <br>
+            </p>
+
+            <div class="picWrapper">
+                <p>
+                    <img src="icons/FT_emoji_screenshot1.PNG" alt="FT Emoji" id="emojiPreview">
+                </p>
+                <input type="button" class="prev3" value="&#10094;" onclick="showNextEmojiScrnShot(-1)">
+                <input type="button" class="next3" value="&#10095;" onclick="showNextEmojiScrnShot(1)">
+                <p class="label">(Emojis Dialog Screenshot)</p>
+
+            </div>
+
+            <p class="afterSample">
+                FancyText was designed to be simple and very easy to use. With FancyText your fancy photo could be ready
+                in a matter of minutes depending on your familiarity with the software and your creativity. Overall when
+                it comes to using FancyText, your creativity is your only limit.
+            </p>
+
+            <p style="color: green;">
+                To download the stanalone version of the application, click <a href="#"
+                    onclick="showStandalonePage()">here</a>. <br>
+                To download the self-contained version of the application, click <a href="#"
+                    onclick="showSelfcontainedPage()">here</a>.
+            </p>
+
+            <p>
+                FancyText is a licensed product of Aikien Softwares Incorporated (a.k.a AikSoft Inc.). Click <a
+                    href="index.html">here</a>
+                to visit the homepage of AikSoft Inc.
+            </p>
+        </div>
+
+        <div id="standalonePage" class="subContent">
+            <h2>Standalone Application Download</h2>
+            <p>
+                The <b>Standalone</b> version of the application can be run in any computer (Windows, Mac, Linux, Unix,
+                etc.)
+                which has the appropriate <b>Java Runtime Environment (JRE)</b> installed. See <a
+                    href="https://www.ibm.com/cloud/learn/jre#:~:text=The%20Java%20Runtime%20Environment%2C%20or,Java%20program%20needs%20to%20run.&text=The%20Java%20Virtual%20Machine%2C%20or%20JVM%2C%20executes%20live%20Java%20applications.">What
+                    is the JRE?</a>
+                to learn more about what is a JRE. Click <a href="#">here</a> to find out if your system already has the
+                JRE installed. <b>Please note, if your system already has the JRE installed, <strong>BUT </strong> the
+                    version is less than 1.8.0_141 (i.e. version 8, update 141),
+                    you need to update or reinstall the latest version of the JRE.</b>
+                Click <a href="https://www.oracle.com/java/technologies/javase-jre8-downloads.html">here</a> to download
+                latest version of the
+                JRE. Click <a href="https://docs.oracle.com/goldengate/1212/gg-winux/GDRAD/java.htm#BGBFJHAB">here</a>
+                for technical
+                assistance on how to install and configure the JRE.
+            </p>
+            <p>
+                The main benefits of the <b>Standalone</b> version are its portability and smaller download size.
+                However, if you
+                don't have the JRE installed on your machine
+                you need to download it from the official website of <strong>Oracle</strong>, the vendor of the
+                <strong>Java</strong>
+                programming language. Click <a
+                    href="https://www.oracle.com/java/technologies/javase-jre8-downloads.html">here</a> to
+                download latest version of the JRE. <strong>(Note: Please ensure that you download the ".exe" version of
+                    the JRE installer
+                    if you are not an advanced computer user.)
+                </strong>
+            </p>
+
+            <p>
+                Click <a href="FancyText.zip" download>here</a> to download the zip file of the <b>stanalone version</b> of the application.
+            </p>
+            <p>
+                After downloading the zip file containing the standalone version of the application, unzip it and
+                <strong>make sure
+                    the lib folder which contains the preloader for the application and the jar
+                    file are in the same folder after unzipping the file</strong> . Double click the executable
+                <strong>FancyText.jar</strong> file to load
+                and use the application.
+            </p>
+
+            <p>
+                For any further technical assistance or enquiry about the installation, setup or use of the product go
+                to the <b>Help</b> link at the top of the page.
+            </p>
+
+            <p>
+                Click <a href="#" onclick="showSelfcontainedPage()">here</a> to download <b>self-contained version</b>
+                of the application.
+            </p>
+        </div>
+
+        <div id="selfContainedPage" class="subContent">
+            <h2>Self-contained Application Download</h2>
+            <p>
+                The <b>self-contained</b> version of the application consists of a single, installable bundle that
+                contains the application
+                and a copy of the
+                Java Runtime Environment (JRE) needed to run the application.
+                See <a
+                    href="https://www.ibm.com/cloud/learn/jre#:~:text=The%20Java%20Runtime%20Environment%2C%20or,Java%20program%20needs%20to%20run.&text=The%20Java%20Virtual%20Machine%2C%20or%20JVM%2C%20executes%20live%20Java%20applications.">What
+                    is the JRE?</a> to learn more about what is a JRE.
+                Unlike the Standalone version of the software which can be run on any platform with the
+                right JRE installed, the self-contained version of the software is platform
+                specific. You need to download
+                the installer for your specific platform.
+            </p>
+
+            <p>
+                <a href="FancyText(64-bit).exe" download>Download</a> installer for Windows (x64). <br>
+                <a href="FancyText(32-bit).exe" download>Download</a> installer for Windows (x86). <br>
+                <span style="color: red;">*** Please check back later for Mac installer ***</span>
+            </p>
+
+            <p>
+                For any further technical assistance or enquiry about the installation, setup or use of the product go
+                to the <b>Help</b> menu at the top of the page.
+            </p>
+
+            <p>
+                Click <a href="#" onclick="showStandalonePage()">here</a> to download the standalone version of the
+                application.
+            </p>
+        </div>
+
+        <div id="supp_donate" class="subContent">
+            <h2>Support</h2>
+            <p id="techSupporImgPara">
+                <img src="icons/techSupportIcon1.jpeg" alt="techSupport" id="techSupporImg">
+            </p>
+
+            <p>
+                For technical assistance, enquiries or bug (error) report, contact us as follows: <br>
+                <span>Email :</span> fancy_text@yahoo.com <br>
+                <span>Mobile:</span> +234 903 956 5946
+            </p>
+
+            <h2>Donate</h2>
+            <p id="donateImgPara">
+                <img src="icons/donate1.jpeg" alt="Donate" id="donateImgPara">
+            </p>
+            <p>
+                Although so much work and effort has already been put to make this software what it currently is, a lot
+                more
+                work
+                still needs to be done. There are a lot of cool and advanced features that are still envisioned for the
+                project and are currently being developed.
+                These require a lot of finacial resources in order to <em><b>make it a reality in record time as well as
+                        well
+                        as the continuous maintainance of the product.</b></em> Please we
+                want
+                to appeal to you to support the project. <em><b>Any amount will be greatly appreciated.</b> </em> We
+                intend to make the software free for
+                all for life. <br><br>
+
+                For any free will donations, in cash or in kind, please contact the vendor of FancyText as follows: <br>
+                <span>Email :</span> fancy_text@yahoo.com <br>
+                <span>Mobile:</span> +234 903 956 5946
+            </p>
+        </div>
+
+        <div id="credits" class="subContent">
+            <div id="dedicationDiv">
+                <h2>Dedication</h2>
+                <p><img src="icons/dedication.png" alt="Icon" height="200"></p>
+                <p>To God Almighty.</p>
+            </div>
+
+            <div id="creditsDiv">
+                <h2>Credits</h2>
+                <p><img src="icons/thankU3.jpeg" alt="Icon" height="200"></p>
+                <p style="text-align: left;">
+                    <strong>Developer:</strong> Aikien Softwares, Inc.<br>
+                    <strong>Testers:</strong> Abasi Aikien, Austin Amadi, Elder UD, <br>
+                    Emmanuel ChukwuEmeka. <br>
+
+
+                    <strong>Fonts:</strong> <a href="https://www.fontget.com"
+                        class="credLinks">fontget.com</a> <br>
+                    <strong>Icons/Emojis:</strong> <a href="https://iconsout.com"
+                        class="credLinks">iconsout.com</a>, <a href="https://flaticon.com">flaticon.com</a> <br>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div id="socialMediaLinks">
+            <a href="https://facebook.com" class="socialMediaHandle"><img src="icons/facebook_logo.png" alt="Facebook"
+                    width="25"></a>
+            <a href="https://youtube.com" class="socialMediaHandle"><img src="icons/youtube_logo.png" alt="YouTube"
+                    width="25"></a>
+            <a href="https://twitter.com" class="socialMediaHandle"><img src="icons/twitter_logo.png" alt="Twitter"
+                    width="25"></a>
+            <a href="https://linkedin.com" class="socialMediaHandle"><img src="icons/linkedin_logo.png" alt="LinkedIn"
+                    width="25"></a>
+            <a href="https://instagram.com" class="socialMediaHandle"><img src="icons/instagram_logo.png"
+                    alt="Instagram" width="25"></a>
+        </div>
+        <div id="footer_div">
+            <p id="footerImgPara"><img src="icons/AikSoft_Logo_Transparent2.PNG" alt="logo" class="logo" id="footerImg"/></p>
+            <p>Copyright(C) 2021. Aikien Softwares, Inc. All rights reserved.</p>
+        </div>
+    </div>
+    <script src=ftHome.js></script>
+    <script src=jquery-3.5.1.js></script>
+</body>
+
+</html>

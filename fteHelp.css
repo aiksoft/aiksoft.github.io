@@ -1,0 +1,242 @@
+
+    body{
+        margin: 0%;
+        height: 100%;
+        font-size: 1em;
+        text-align: justify;
+    } 
+
+    p {
+        padding-left: 1.1%;
+        padding-right: 1.1%;
+    }
+
+    h1, h2, h3, h4{
+        padding-left: 1.1%; 
+        text-decoration: underline;
+    }
+
+    #mainDiv{
+        display: -moz-box;
+        display: -webkit-box;
+        -moz-box-orient: horizontal;
+        -webkit-box-orient: horizontal;
+        min-height: 80%;
+        background-color: rgb(255, 255, 255);
+    }
+
+    #nav{
+        width: 20%;
+        min-height: 100%;
+        border-width: 1px;
+        border-right: 0px;
+        border-style: solid;
+        background-color: yellow;
+        position: fixed;
+        overflow: auto;
+        max-height: 40.2%;
+    }
+
+    #section{
+        width: 79.8%;
+        left: 20%;
+        min-height: 100%;
+        display: -moz-box;
+        display: -webkit-box;
+        -moz-box-orient: vertical;
+        -webkit-box-orient: vertical;
+        border-width: 1px;
+        border-right: 0px;
+        border-style: solid;
+        position: relative;
+    }
+
+    .heading{
+    color: #994d00;
+    }
+
+    #welcomeHeading{
+        background-color: rgb(10, 65, 10);
+        text-align: center;
+    }
+
+    #welcomeHeadingText{
+        font-size: 35px;
+        color: rgb(0, 0, 255);
+        /*text-align: center;*/
+        margin-top: 5px;
+        text-decoration: none;
+    }
+
+    .logo{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 1%;
+    }  
+
+    /*
+    #logos{
+    margin: auto;
+    } */
+
+    li ul{
+        margin-left: -1.2em;
+    }
+
+    #footer{
+        background-color: rgb(29, 78, 23);  
+    }
+
+   /*
+     #footer_div{
+        display: -moz-box;
+        display: -webkit-box;
+        -moz-box-orient: horizontal;
+        -webkit-box-orient: horizontal;
+        -ms-box-orient:horizontal;
+        text-align: center;
+        color: blue;
+        width: 46%;
+        margin: auto;
+        padding-bottom: 5px;
+    }
+   */
+
+    #footer_div p{
+        margin: auto;
+        width: fit-content;
+        color: rgb(0, 0, 255);
+    }
+
+    #footerImgPara{
+        max-width: 14.6%;
+    }
+
+    #footerLogo{
+        padding-top: 1%;
+        max-width: 100%;
+    } 
+
+    a:visited{
+        color: #994d00;
+    }
+
+    a{
+        color: blue;
+    }
+
+    a:hover{
+        color: rgb(28, 70, 28);
+    }
+
+
+/******************************************End 1366px screen***********************************/
+
+@media screen and (max-width: 600px){
+    body{
+        margin: 0%;
+        height: 100%;
+        font-size: 1em;
+    } 
+
+    p {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    h1, h2, h3, h4{
+        padding-left: 5px; 
+        text-decoration: underline;
+        text-align: left;
+    }
+
+    #mainDiv{
+        display: -moz-box;
+        display: -webkit-box;
+        -moz-box-orient: horizontal;
+        -webkit-box-orient: horizontal;
+        min-height: 80%;
+        background-color: rgb(255, 255, 255);
+    }
+
+    #nav{
+        width: 40%;
+        min-height: 100%;
+        border-width: 1px;
+        border-right: 0;
+        border-style: solid;
+        background-color: yellow;
+        position: fixed;
+        overflow: auto;
+        max-height: 550px;
+    }
+
+    #section{
+        width: 58%;
+        left: 40%;
+        min-height: 100%;
+        display: -moz-box;
+        display: -webkit-box;
+        -moz-box-orient: vertical;
+        -webkit-box-orient: vertical;
+        border-width: 1%;
+        border-right: 0;
+        border-style: solid;
+        position: relative;
+    }
+
+    .heading{
+    color: #994d00;
+    }
+
+    #welcomeHeading{
+        background-color: rgb(10, 65, 10);
+        text-align: center;
+    }
+
+    #welcomeHeadingText{
+        font-size: 1.2em;
+        color: rgb(0, 0, 255);
+        /*text-align: center;*/
+        margin-top: 5px;
+        text-decoration: none;
+    }
+
+    .logo{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 10px;
+    }  
+
+    li ul{
+        margin-left: -1.2em;
+    }
+
+    #footer{
+        background-color: rgb(29, 78, 23);  
+    }
+
+    a:visited{
+        color: blue;
+    }
+
+    a{
+        color: #994d00
+    }
+
+    #footerLogo{
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 10px;
+    } 
+
+    #copyrightPara{
+        text-align: center;
+    }
+
+    #footer_div:first-child{
+        margin-top: 10px;
+    }
+}

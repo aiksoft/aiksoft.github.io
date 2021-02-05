@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>AikSoft</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="description" content="Official homepage of Aikien Softwares Inc.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="AikSoft Inc.">
+    <meta name="keywords" content="AikSoft, Aikien Softwares, Software company, FancyText, Abasi Aikien">
+    <link rel="stylesheet" type="text/css" href="aiksoft_stylesheet.css" />
+</head>
+
+<body onload="loadHome()">
+    <div id="all">
+        <div id="heading">
+            <img src="icons/AikSoft_Logo_Transparent2.PNG" alt="aiksoft_logo" id="aiksoftLogo" />
+            <h3 id="moto">
+                ...easier with software.
+            </h3>
+
+            <div id="navBarWrapper" onclick="toggleMenuVisibility()">
+                <hr class="navbarLines">
+                <hr class="navbarLines">
+                <hr class="navbarLines">
+                <p id="navbarXIcon">X</p>
+            </div>
+        </div>
+
+        <div id="navBar">
+            <div id="home">
+                <a href="#" class="headLink" onclick="showHome()" id="homeLink">Home</a>
+            </div>
+
+            <div id="products">
+                <a href="#" class="headLink">Products</a>
+                <div class="navLinks"><a href="ftHome.html">FancyText</a></div>
+            </div>
+
+            <div id="services">
+                <a href="#" class="headLink" onclick="showDeskMobServ()" id="servLink">Services</a>
+            </div>
+
+            <div>
+                <a href="#" class="headLink" onclick="showAbout()" id="aboutLink">About Us</a>
+            </div>
+
+            <div>
+                <a href="#" class="headLink" onclick="showContact()" id="contactLink">Contact Us</a>
+            </div>
+        </div>
+
+        <div id="contentWrap" class="contentWrap" onclick="hidNav()">
+            <div id="content" class="content">
+                <div id="homePage">
+                    <div id="welcome1" class="homeDiv">
+                        <p id="welcomePara">
+                            <span id="welcomeMessage">Welcome to AikSoft!!!</span><br>
+                            <span id="welcomeMessage2">Your home of secure, efficient, robust, and reliable custom-built
+                                softwares.</span>
+                        </p>
+                    </div>
+
+                    <div id="intro">
+                        <div id="welcome2" class="homeDiv">
+                            <p id="welcomePara2">
+                                At AikSoft we strive to make life easier for you, our highly esteemed customer, by
+                                developing
+                                <b>custom-built (tailor-made)</b> computer programs and handy utility
+                                tools to help you with your daily routine activities, wether at home or at your
+                                organisation or business enterprise.
+                            </p>
+                        </div>
+
+                        <div id="welcome3" class="homeDiv">
+                            <p>
+                                Using software
+                            </p>
+                            <ul id="softAdv">
+                                <li>Saves time.</li>
+                                <li>Saves money.</li>
+                                <li>Increases efficiency.</li>
+                                <li>Maximises productivity.</li>
+                                <li>Maximises profit.</li>
+                                <li>Etc.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="homeDiv" id="ftInfoDiv">
+                        <p id="product_img"><img src="icons/FancyText_screenshot.PNG" alt="FT Screenshot" class="photo" id="ftPhoto"></p>
+                        <p id="ftdesc">FancyText (v.1.0) - A free, simple and easy-to-use desktop application designed to create pictures containing
+                            fancy text graphics, pictures and simple shapes. <a href="ftHome.html">See more..</a></p>
+                    </div>
+
+
+                    <div id="points">
+                        <div id="welcome4" class="homeDiv">
+                            <p id="welcomePara4">
+                                At AikSoft we use <b>algorithms</b> that are <b>very secure, efficient, robust and
+                                    reliable</b> as
+                                well as create <b>user-friendly (easy-to-use) graphics user interfaces (GUIs)</b> .
+                            </p>
+
+                            <p>
+                                Our products are designed as per customer specifications and tested extensively for
+                                effectiveness and performance.
+                            </p>
+                        </div>
+
+                        <div id="welcome5" class="homeDiv">
+                            <p id="welcomePara5">
+                                At AikSoft we incorporate the latest technology, libraries and trends in modern computer
+                                programming and
+                                scripting languages such as Java, Python, C++, C, C#, SQL, Android, JavaScript, HTML5,
+                                CSS3, PHP, etc to build efficient, reliable, robust, secure desktop and mobile
+                                applications with user-friendly
+                                GUIs.
+                            </p>
+                            <div id="pLangLogo">
+                                <img src="icons/java_logo.png" alt="Java Logo" width="60">
+                                <img src="icons/python_logo.png" alt="Python Logo" width="60">
+                                <img src="icons/c++_logo.png" alt="CPP Logo" width="60">
+                                <img src="icons/c_logo.png" alt="C Logo" width="60">
+                                <img src="icons/cSharp_logo.png" alt="C# Logo" width="60">
+                                <img src="icons/sql_logo.png" alt="SQL Logo" width="60">
+                                <img src="icons/mysql_logo.png" alt="MySQL Logo" width="75">
+                                <img src="icons/js_logo.png" alt="JS Logo" width="100">
+                                <img src="icons/html5_logo.png" alt="HTML5 Logo" width="60">
+                                <img src="icons/css3_logo.png" alt="CSS3 Logo" width="60">
+                                <img src="icons/php_logo.png" alt="PHP Logo" width="75">
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div id="welcome6" class="homeDiv">
+                        <p>100% customer satisfaction guaranteed!!!</p>
+                    </div>
+                </div>
+
+                <div id="servicesDiv">
+                    <h1>Services</h1>
+                    <p>
+                        At Aiksoft we provide the following services:
+                    </p>
+
+                    <div class="serDivOuter">
+                        <div id="serDiv1">
+                            <h2 class="servInfo">Desktop and Mobile Applications</h2>
+                            <p>
+                                <img src="icons/appDev2.jpeg" alt="photo" class="servImg">
+                                <img src="icons/appDev3.png" alt="photo" class="servImg">
+                            </p>
+                            <p class="servInfo">
+                                We create custom-built desktop and mobile applications using a range of programming
+                                languages such as Java, Python,
+                                C++, etc, to help you with your daily routine activities such as
+                                book keeping for your business or scheduling and planning your daily workflow or
+                                activities
+                                in order to save
+                                time, increase efficiency and maximise productivity.
+                            </p>
+                        </div>
+
+                        <div id="serDiv2">
+                            <h2 class="servInfo">Web Design</h2>
+                            <p>
+                                <img src="icons/webDesign1.jpeg" alt="photo" class="servImg">
+                            </p>
+
+                            <p>
+                                <img src="icons/webDesign2.png" alt="photo" class="servImg">
+                            </p>
+
+                            <p class="servInfo">
+                                We offer both frontend and backend responsive web design and implementation at very
+                                affordable
+                                prices using standard graphics and web design principles, techniques and methodologies.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="serDivOuter">
+                        <div id="serDiv3">
+                            <h2 class="servInfo">Training</h2>
+                            <p>
+                                <img src="icons/training.jpeg" alt="photo" class="servImg">
+                            </p>
+                            <p class="servInfo">
+                                We offer standard hands-on training for popular and important programming languages such
+                                as
+                                Java, Python, C++, C#, C, PHP, SQL (MySQL), HTML5, CSS3 and JavaScript.
+                            </p>
+                        </div>
+
+                        <div id="serDiv4">
+                            <h2 class="servInfo">Database Management</h2>
+                            <p>
+                                <img src="icons/dbms.jpeg" alt="photo" class="servImg">
+                            </p>
+                            <p class="servInfo">
+                                We develop custom-built efficient, secure, robust and reliable frontend database
+                                application
+                                as well as efficient and secure backend database management system and algorithms.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div id="about">
+                    <h1>
+                        About Us
+                    </h1>
+
+                    <p>
+                        Aikien Softwares Incorporated (a.k.a. AikSoft Inc.) is a software company based in Yenagoa,
+                        Bayelsa
+                        State, Nigeria. It was fully established in January, 2021
+                        by Mr. Abasi Aikien, a graduate of Mechatronic Engineering from UCSI University, Kuala Lumpur,
+                        Malaysia.
+                        The company's core values are Integrity, Creativity and
+                        Humanitarianism among others. The company is a fast growing company.
+                    </p>
+                    <p>
+                        At AikSoft our goal is to make your everyday task, wether domestic, corporate or commercial,
+                        much
+                        easier for you, our highly esteemed customer, by developing efficient, robust and reliable
+                        computer
+                        programs that performs your specific task in an efficient manner. This is why the company's moto
+                        simply states <b>"...easier with software"</b>. This is our goal, to make life much easier and
+                        stress-free for you.
+                    </p>
+
+                    <h2>
+                        Vision
+                    </h2>
+                    <ul>
+                        <li>
+                            To be a leading software and technology company in Nigeria for both desktop and mobile platforms.
+                        </li>
+                    </ul>
+
+                    <h2>Mission</h2>
+                    <ul>
+                        <li>
+                            To provide useful, relaible, efficient, secure and robust softwares and software related
+                            services for both desktop and mobile platforms.
+                        </li>
+
+                        <li>
+                            To provide both frontend and backend web design and implementaton services.
+                        </li>
+
+                        <li>
+                            To provide standard training for popular programming and scripting languages such as Java,
+                            Python,
+                            C++,
+                            C, C#, SQL, HTML5, CSS3, JavaScript, PHP, etc.
+                        </li>
+
+                        <li>
+                            To increase the general awareness about computer programming and the tech world in Nigeria.
+                        </li>
+
+                        <li>
+                            To provide efficient algorithms and user-friendly graphics user interfaces for database
+                            management.
+                        </li>
+                    </ul>
+                </div>
+
+                <div id="contact">
+                    <h1>Contact Us</h1>
+                    <p>Aikien Softwares, Inc., <br>
+                        No.7 Obele Street, Phase 2, <br>
+                        Yenagoa, Yenagoa LGA,<br>
+                        Bayelsa State, Nigeria.<br>
+                    </p>
+                    <p>Email: aiksoft@yahoo.com.</p>
+                    <p>Mobile: +234 903 956 5946.</p>
+                    <p>Working Hrs: 9:00AM - 5:00 PM (Mon - Fri).</p>
+                    <!--<p id="infoP"></p>-->
+                </div>
+            </div>
+
+            <div id="footer">
+                <div id="socialMediaLinks">
+                    <a href="https://facebook.com" class="socialMediaHandle"><img src="icons/facebook_logo.png"
+                            alt="Facebook" width="25"></a>
+                    <a href="https://youtube.com" class="socialMediaHandle"><img src="icons/youtube_logo.png"
+                            alt="YouTube" width="25"></a>
+                    <a href="https://twitter.com" class="socialMediaHandle"><img src="icons/twitter_logo.png"
+                            alt="Twitter" width="25"></a>
+                    <a href="https://linkedin.com" class="socialMediaHandle"><img src="icons/linkedin_logo.png"
+                            alt="LinkedIn" width="25"></a>
+                    <a href="https://instagram.com" class="socialMediaHandle"><img src="icons/instagram_logo.png"
+                            alt="Instagram" width="25"></a>
+                </div>
+                <div id="footer_div">
+                    <p><img src="icons/AikSoft_Logo_Transparent2.PNG" alt="logo" width="100" class="logo" /></p>
+                    <p id="copyrightPara">Copyright(C) 2021. Aikien Softwares, Inc. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src=aiksoft_js.js></script>
+    <script src=jquery-3.5.1.js></script>
+</body>
+
+</html>

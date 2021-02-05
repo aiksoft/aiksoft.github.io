@@ -1,0 +1,900 @@
+
+    html, body{
+        width: 100%;
+        height: 100%;
+    }
+    
+    body{
+        margin: 0%;
+        font-size: 20px;
+        color: purple;
+        text-align: justify;
+    }
+
+    h1, h2, h3, h4, h5, h6{
+        text-align: left;
+    }
+
+    #heading{
+        background-color: rgb(29, 78, 23);
+        padding-top: 10px;
+        padding-bottom: 0px;
+        margin: 0%;
+        text-align: center;
+    }
+    
+    #moto{
+        margin: 0px;
+        color:rgb(35, 15, 146);
+        text-align: center;
+    }
+    
+    #navBar{
+        margin-top: 0%;
+        background-color: rgb(29, 78, 23);
+        width: 98%;
+        float: left;
+        padding-right: 1%;
+        padding-left: 1%;
+    }
+    
+    #navBar div{
+        width: fit-content;
+        float: left;
+        padding-left: 25px;
+    }
+    
+    #navBar div div{
+        display: none;
+        position: absolute;
+        padding: 0;
+    }
+    
+    #downloads:hover div{
+        display: block;
+        background-color:rgb(29, 78, 23);
+    }
+    
+    #help:hover div{
+        display: block;
+        background-color: rgb(29, 78, 23);
+    } 
+    
+    .headLink{
+        font-size: 25px;
+    }
+    
+    a{
+        color: blue;
+    }
+    
+    a:hover{
+        color:rgb(251, 255, 0);
+        text-decoration: none;
+    }
+    
+    #footer{
+        background-color: rgb(29, 78, 23);
+        padding-top:5px;  
+        clear: both;
+    }
+    
+    #footer_div{
+        display: -moz-box;
+        display: -webkit-box;
+        -moz-box-orient: horizontal;
+        -webkit-box-orient: horizontal; 
+        width: 50%;
+        margin: auto;
+        text-align: center;
+        padding-bottom: 5px;
+        padding-top:5px;  
+    }
+    
+    #footer_div p{
+        padding-left: 5px;
+        margin:auto;
+    }
+
+    #footerImgPara{
+        max-width: 120px;
+    }
+
+    #footerImg{
+        max-width: 95%;
+    }
+
+    .socialMediaHandle{   
+        padding-left: 20px;
+    } 
+    
+    #socialMediaLinks{
+        margin-left: auto;
+        margin-right: auto;
+        width:fit-content;
+    }
+    
+    a img{
+        border-width: 0px;
+    }
+    
+    #content{
+        min-height: calc(100% - 250px);
+        padding: 20px;
+    }
+    
+    .sample{
+        float: left;
+        padding-left: 20px;
+        text-align: center;
+        display: inline;
+    }
+    
+    .afterSample{
+        clear: both;
+    }
+    
+    #ftLogoPara, #welcomeMessage{
+        text-align: center;
+    }
+    
+    #welcomeMessage{
+        color: rgb(226, 172, 172);
+        text-shadow: 0 0 30px rgb(42, 10, 185);
+        font-size: 40px;
+        padding: 0%;
+        margin: 0%;
+    }
+    
+    #supp_donate, #selfContainedPage, #standalonePage{
+        color: rgb(21, 87, 12);
+    }
+
+    #techSupporImgPara{
+        max-width: 200px;
+    }
+
+    #techSupporImg{
+        width: 100%;
+    }
+
+    #donateImgPara{
+        max-width: 400px;
+    }
+
+    #donateImg{
+        width: 100%;
+    }
+    
+    #credits{
+        color:rgb(129, 79, 12);
+    }
+    
+    .credLinks{
+        color: rgb(26, 17, 148);
+    }
+    .subContent{
+        padding-top: 20px;
+    }
+    
+    #samplesWrapper{
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 90%;
+    }
+    
+    #aboutFT{
+        color: midnightblue;
+    }
+    
+    #textInfo{
+        color:cadetblue;
+        margin-top: auto;
+    }
+    
+    #fontSamples{
+        position: relative;
+        border: 2px solid cadetblue;
+        /*height: auto;*/
+        width: 200px;
+        margin-top: auto;
+        height: auto;
+        margin-right: auto;
+        margin-left: auto;
+        width: fit-content;
+    }
+    
+    #fontSamples p{
+        height: auto;
+        margin-right: 25px;
+        margin-left: 25px;
+        width: fit-content;
+    }
+    
+    #fontSamples hr{
+        margin: 0;
+    }
+    
+    #fontPrevLabel{
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        color:cadetblue;
+    }
+    
+    #langInfo{
+        color: olive;
+    }
+    
+    #effectInfo{
+        color: rgb(177, 163, 39);
+    }
+    
+    #emojiInfo{
+        color: lightcoral;
+    }
+    
+    .label{
+        color: rgb(49, 26, 133);
+        font-size: 16px;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+    
+    #ftScreenshotDiv{
+        max-width: 95%;
+        margin: auto;
+        padding-top: 15px;
+    }
+    
+    #credits div{
+        float: left;
+        margin-left: 0px;
+        margin-right: 20px;
+        margin-top: 20px;
+    }
+    
+    #dedicationDiv{
+        /*background-color: rgba(16, 78, 35, 0.644);*/
+        padding-left: 10px;
+        width: 300px;
+        border: 2px solid green;
+        color: green;
+    }
+    
+    #creditsDiv{
+        /*background-color: rgba(9, 63, 25, 0.644);*/
+        padding-left: 10px;
+        width: 450px;
+        margin-bottom: 20px;
+        border: 2px solid green;
+        color: green;
+    }
+    
+    .picWrapper{
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        width: fit-content;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    .picWrapper p{
+        text-align: center;
+        width: fit-content;
+    }
+    
+    .picWrapper p img{
+        max-width: 100%;
+    }
+    
+    #ftPhoto{
+        max-width: 100%;
+    }
+    
+    /***********************************uuyyuu*****************************************/
+    #samplesWrapper{
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
+        min-width: 400px;
+    }
+    
+    .mySlides{
+        position: absolute;
+        left: 0;
+        top: 0;
+        opacity: 0;
+        transition: opacity 3.0s ease;
+    }
+    
+    .showSlide{
+        opacity: 1;
+    }
+    
+    #firstPic{
+        position: relative;
+        left: 0;
+        top: 0;
+    }
+    
+    .prev, .next{
+        cursor:pointer;
+        position:absolute;
+        top: 50%;
+        width: auto;
+        /*margin-top: -15px;*/
+        padding: 5px;
+        color: gray;
+        font-weight: bold;
+        font-size: 25px;
+        transition: .2s ease;
+        user-select: none;
+        background-color: transparent;
+        border: none;
+        outline: none;
+    }
+    
+    .next{
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+    
+    .prev:hover, .next:hover{
+        color: green;
+    }
+    
+    .text{
+        color: #f2f2f2;
+        font-size: 20px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .numbertext{
+        color:#f2f2f2;
+        font-size: 20px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+    }
+    
+    .dot{
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin:0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+    
+    .active, .dot:hover{
+        background-color: #464242;
+    }
+    /************************************tyyyyyy****************************************/
+    
+    .prev2, .next2{
+        cursor:pointer;
+        position:absolute;
+        top: 30%;
+        width: auto;
+        /*margin-top: -15px;*/
+        padding: 5px;
+        color: gray;
+        font-weight: bold;
+        font-size: 20px;
+        
+        /*user-select: none;
+            transition: .2s ease;
+        */
+        background-color: transparent;
+        border: none;
+        outline: none;
+    }
+    
+    .next2{
+        right: 0;
+        /*border-radius: 3px 0 0 3px;*/
+    }
+    
+    
+    .prev2:hover, .next2:hover{
+        color: green;
+    }
+    
+    .prev3, .next3{
+        cursor:pointer;
+        position:absolute;
+        top: 40%;
+        width: auto;
+        /*margin-top: -15px;*/
+        padding: 5px;
+        color: gray;
+        font-weight: bold;
+        font-size: 20px;
+        
+        /*user-select: none;
+            transition: .2s ease;
+        */
+        background-color: transparent;
+        border: none;
+        outline: none;
+    }
+    
+    .next3{
+        right: 0;
+        /*border-radius: 3px 0 0 3px;*/
+    }
+    
+    .prev3{
+        left: 0;
+    }
+    
+    .prev3:hover, .next3:hover{
+        color: green;
+    }
+
+
+/******************************************end 1366px screen****************************************************/
+
+@media screen and (max-width: 600px){
+    html, body{
+        min-width: 100%;
+        min-height: 100%;
+    }
+    
+    body{
+        margin: 0%;
+        font-size: 1em;
+        color: purple;
+        text-align: justify;
+    }
+
+    #headingWrapper{
+        background-color: rgb(29, 78, 23);
+        width: 100%;
+    }
+    
+    #moto{
+        padding: 5px;
+        color:rgb(35, 15, 146);
+    }
+    
+    #heading{
+        padding-top: 10px;
+        width: 100%;
+        padding-bottom: 0;
+        margin:0;
+        text-align: center;
+    }
+
+    #ftLogo{
+        width: 80px;
+    }
+    
+    #navBar{
+        margin-top: 0;
+        width: 98%;
+        position: absolute;
+        /*float: left;*/
+    }
+    
+    #navBar div{
+        width: fit-content;
+        float: left;
+        padding: 0;
+        margin-left: 2%;
+    }
+    
+    #navBar div div{
+        display: none;
+        position: absolute;
+        padding: 0;
+    }
+    
+    #downloads:hover div{
+        display: block;
+        background-color:rgb(29, 78, 23);
+    }
+    
+    #help:hover div{
+        display: block;
+        background-color: rgb(29, 78, 23);
+    } 
+    
+    .headLink{
+        font-size: 1.2em;
+    }
+    
+    a{
+        color: blue;
+    }
+    
+    #footer{
+        background-color: rgb(29, 78, 23);
+        padding-top:5px;  
+        clear: both;
+        width: 100%;
+    }
+    
+     
+    #footer_div{
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        display: inline-block;
+    } 
+
+    #footerImgPara{
+        max-width: 120px;
+    }
+
+    #footerImg{
+        max-width: 50%;
+    }
+
+    #footer_div p{
+        float: left;
+        padding-left: 5px;
+        max-width: 95%;
+    }
+
+    .socialMediaHandle{   
+        padding-left: 20px;
+    } 
+    
+    #socialMediaLinks{
+        margin-left: auto;
+        margin-right: auto;
+        width:fit-content;
+    }
+    
+    a img{
+        border-width: 0px;
+    }
+    
+    #content{
+        padding: 15px;
+        margin-left: auto;
+        margin-right: auto;
+        width: fit-content;
+    }
+
+    #homeDiv p{
+        width: fit-content;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    .sample{
+        float: left;
+        padding-left: 20px;
+        text-align: center;
+        display: inline;
+    }
+    
+    .afterSample{
+        clear: both;
+    }
+    
+    #ftLogoPara, #welcomeMessage{
+        text-align: center;
+    }
+    
+    #welcomeMessage{
+        color: rgb(226, 172, 172);
+        text-shadow: 0 0 30px rgb(42, 10, 185);
+        font-size: 40px;
+        padding: 0%;
+        margin: 0%;
+    }
+    
+    #supp_donate, #selfContainedPage, #standalonePage{
+        color: rgb(21, 87, 12);
+    }
+
+    #techSupporImgPara{
+        max-width: 95%;
+    }
+
+    #techSupporImg{
+        width: 100%;
+    }
+
+    #donateImgPara{
+        max-width: 95%;
+    }
+
+    #donateImg{
+        width: 100%;
+    }
+    
+    #credits{
+        color:rgb(129, 79, 12);
+    }
+    
+    .credLinks{
+        color: rgb(26, 17, 148);
+    }
+    .subContent{
+        padding-top: 20px;
+    }
+    
+    #samplesWrapper{
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 95%;
+    }
+    
+    #aboutFT{
+        color: midnightblue;
+    }
+    
+    #textInfo{
+        color:cadetblue;
+        margin-top: auto;
+    }
+    
+    #fontSamples{
+        position: relative;
+        border: 2px solid cadetblue;
+        width: fit-content;
+        margin: auto;
+    }
+    
+    #fontSamples p{
+        height: auto;
+        margin-right: 25px;
+        margin-left: 25px;
+    }
+    
+    #fontSamples hr{
+        margin: 0;
+    }
+    
+    #fontPrevLabel{
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        color:cadetblue;
+    }
+    
+    #langInfo{
+        color: olive;
+    }
+    
+    #effectInfo{
+        color: rgb(177, 163, 39);
+    }
+    
+    #emojiInfo{
+        color: lightcoral;
+    }
+    
+    .label{
+        color: rgb(49, 26, 133);
+        font-size: 16px;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+    
+    #ftScreenshotDiv{
+        width: 100%;
+        margin: auto;
+        padding-top: 15px;
+    }
+    
+    #credits div{
+        margin-left: 0px;
+        margin-right: 20px;
+        margin-top: 20px;
+    }
+    
+    #dedicationDiv{
+        /*background-color: rgba(16, 78, 35, 0.644);*/
+        padding-left: 10px;
+        width: 95%;
+        border: 1% solid green;
+        color: green;
+    }
+    
+    #creditsDiv{
+        /*background-color: rgba(9, 63, 25, 0.644);*/
+        padding-left: 10px;
+        width: 95%;
+        margin-bottom: 20px;
+        border: 1% solid green;
+        color: green;
+    }
+    
+    .picWrapper{
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        width: 95%;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    
+    .picWrapper p{
+        text-align: center;
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        width: 95%;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    
+    .picWrapper p img{
+        max-width: 100%;
+    }
+    
+    #ftPhoto{
+        max-width: 100%;
+    }
+    
+    /********************************yyyyyyyyy********************************************/
+    #samplesWrapper{
+        max-width: 95%;
+        min-width: 90%;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    
+    .mySlides{
+        position: absolute;
+        left: 0;
+        top: 0;
+        opacity: 0;
+        transition: opacity 3.0s ease;
+        max-width: 95%;
+    }
+    
+    .showSlide{
+        opacity: 1;
+    }
+    
+    #firstPic{
+        position: relative;
+        left: 0;
+        top: 0;
+    }
+    
+    .prev, .next{
+        cursor:pointer;
+        position:absolute;
+        top: 50%;
+        width: fit-content;
+        /*margin-top: -15px;*/
+        padding: 1%;
+        color: gray;
+        font-weight: bold;
+        font-size: 25px;
+        transition: .2s ease;
+        user-select: none;
+        background-color: transparent;
+        border: none;
+        outline: none;
+    }
+    
+    .next{
+        right: 3%;
+    }
+
+    .prev{
+        left: -3%;
+    }
+    
+    .prev:hover, .next:hover{
+        color: green;
+    }
+    
+    .text{
+        color: #f2f2f2;
+        font-size: 1em;
+        padding: 2% 3%;
+        position: absolute;
+        bottom: 8px;
+        width: 90%;
+        text-align: center;
+    }
+    
+    .numbertext{
+        color:#f2f2f2;
+        font-size: 20px;
+        padding: 2% 3%;
+        position: absolute;
+        top: 0;
+    }
+    
+    .dot{
+        cursor: pointer;
+        height: 13px;
+        width: 13px;
+        margin:2px 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+    
+    .active, .dot:hover{
+        background-color: #464242;
+    }
+    /************************************eweweeee***************************************/
+    
+    .prev2, .next2{
+        cursor:pointer;
+        position:absolute;
+        top: 30%;
+        width: auto;
+        /*margin-top: -15px;*/
+        padding: 5px;
+        color: gray;
+        font-weight: bold;
+        font-size: 20px;
+        
+        /*user-select: none;
+            transition: .2s ease;
+        */
+        background-color: transparent;
+        border: none;
+        outline: none;
+    }
+    
+    .next2{
+        right: 0;
+        /*border-radius: 3px 0 0 3px;*/
+    }
+    
+    
+    .prev2:hover, .next2:hover{
+        color: green;
+    }
+    
+    .prev3, .next3{
+        cursor:pointer;
+        position:absolute;
+        top: 40%;
+        width: auto;
+        /*margin-top: -15px;*/
+        padding: 5px;
+        color: gray;
+        font-weight: bold;
+        font-size: 20px;
+        
+        /*user-select: none;
+            transition: .2s ease;
+        */
+        background-color: transparent;
+        border: none;
+        outline: none;
+    }
+    
+    .next3{
+        right: 0;
+        /*border-radius: 3px 0 0 3px;*/
+    }
+    
+    .prev3{
+        left: 0;
+    }
+    
+    .prev3:hover, .next3:hover{
+        color: green;
+    }
+}
+

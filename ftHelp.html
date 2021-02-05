@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>FT Help</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="description" content="FancyText getting started user guide (manual).">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="AikSoft Inc.">
+    <meta name="keywords"
+        content="FancyText, FancyText software, Fancy Text, Fancy Text software, AikSoft, Aikien Softwares, FancyText user guide, FancyText user manual, FancyText getting started">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="fteHelp.css" />
+</head>
+
+<body onload="animateHeading()">
+
+    <div id="mainDiv">
+        <div id="nav">
+            <h1 style="color:blue; text-decoration: none;">Content</h1>
+            <ul>
+                <li><a href="#welcome">Welcome</a></li>
+                <li><a href="#about">About</a></li>
+                <li>
+                    <a href="#editing">Editing</a>
+                    <ul>
+                        <li>
+                            <a href="#addGraphics">Add</a>
+                            <ul>
+                                <li><a href="#addText">Text</a></li>
+                                <li><a href="#addImage">Image</a></li>
+                                <li><a href="#addArrow">Arrow</a></li>
+                                <li><a href="#addLine">Line</a></li>
+                                <li><a href="#addArc">Arc</a></li>
+                                <li><a href="#addEllipse">Ellipse</a></li>
+                                <li><a href="#addCircle">Circle</a></li>
+                                <li><a href="#addRect">Rectangle</a></li>
+                                <li><a href="#addReglPoly">Regular Polygon</a></li>
+                                <li><a href="#addStarPoly">Star Polygon</a></li>
+                                <li><a href="#addTriangle">Right-angle Triangle</a></li>
+                                <li><a href="#addEmoji">Emoji</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#relocateGraphics">Relocating Graphics</a></li>
+                        <li><a href="#styleAndAppearance">Styling and Appearance</a></li>
+                        <li><a href="#delClrGraphics">Delete/Clear Graphics</a></li>
+                        <li><a href="#zOrderReposition">Z-order Repositioning</a>
+                            <ul>
+                                <li><a href="#bForward">Bring Forward</a></li>
+                                <li><a href="#b2Front">Bring To Front</a></li>
+                                <li><a href="#sBackward">Send Behind</a></li>
+                                <li><a href="#s2Back">Send To Back</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#file">File</a>
+                    <ul>
+                        <li><a href="#newFile">New File</a></li>
+                        <li><a href="#openFile">Open File</a></li>
+                        <li><a href="#appendFile">Append File</a></li>
+                        <li><a href="#saveImage">Save Image</a></li>
+                        <li><a href="#save">Save</a></li>
+                        <li><a href="#saveAs">Save As</a></li>
+                        <li><a href="#saveAll">Save All</a></li>
+                        <li><a href="#close">Close</a></li>
+                        <li><a href="#closeAll">Close All</a></li>
+                    </ul>
+                </li>
+                <li><a href="#exit">Exit</a></li>
+                <li><a href="#conclusion">Conclusion</a></li>
+            </ul>
+        </div>
+        <div id="section">
+            <div id="welcome">
+                <div id="welcomeHeading">
+                    <div id="logos">
+                        <img src="icons/FTLogo.PNG" alt="logo" width="100" height="100" class="logo" />
+                    </div>
+
+                    <h1 id="welcomeHeadingText">
+                        Welcome to FancyText (FT) User Guide
+                    </h1>
+                    <p style="color:rgb(255, 17, 0)">
+                        <img src="icons/emailIcon.png" alt="Email: " width="20" height="15" id="emailIcon" />
+                        fancy_text@yahoo.com
+                        <img src="icons/phoneIcon.png" alt="Mobile: " width="22" height="18" id="phoneIcon" /> +234 903
+                        956 5946
+                    </p>
+                </div>
+                <h3 class="heading" style="text-decoration: none;">Hello there!</h3>
+                <p>
+                    Welcome to FancyText (FT) User Guide. This manual will guide you through the basics of
+                    creating
+                    <strong>beautiful and elegant </strong> text and graphics using FT software. This guide is written
+                    in simple and straightforward English so that you can easily follow along. Please feel free to send
+                    an email or call the number above for any further enquiries or support.
+                </p>
+            </div>
+
+            <div id="about">
+                <h1 class="heading">About</h1>
+                <p>
+                    FancyText(FT) is a free and simple software designed basically to be used to create <b>images
+                        containing
+                        fancy (beautiful and elegant) text graphics</b> as well as other graphics such as pictures,
+                    simple shapes
+                    such as line, circle, square, polygon, etc, complex shapes created from simple shapes and emojis. 
+                    Click <a href="ftHome.html">here</a> to visit home page.
+                </p>
+                <p>
+                    FancyText is a product of Aikien's Softwares Incorporated, a software company
+                    based in the city of Yenagoa in Bayelsa State, Nigeria. Click <a href="index.html">here</a> 
+                    to visit home page.
+                </p>
+            </div>
+            <div id="editing">
+                <h1 class="heading">Editing</h1>
+
+                <div id="addGraphics">
+                    <h2 class="heading">Add Graphics</h2>
+                    <h3 class="heading" id="addText">Text</h3>
+                    <p>
+                        To add a new text graphics to the Graphics Display Pane (GDP), click on the text input area and
+                        type
+                        your text. Next, click on the <img src="icons/addTextIconOriginal.PNG" width="20" height="17" />
+                        icon in the toolbar or Add menu to add the text to the GDP. Alternatively,
+                        you can press <b>Ctrl + Enter</b> after typing your text into the text area.
+                    </p>
+
+                    <h3 class="heading" id="addImage">Image</h3>
+                    <p>
+                        To add a new picture to the GDP, click on the <img src="icons/addImageIconOriginal2.PNG"
+                            width="20" height="17" />
+                        icon in the toolbar or Add menu. This will open a file explorer window where you can navigate
+                        to the picture you want to insert. Alternatively, you can press <b>Ctrl + Shift + Enter</b> to
+                        open
+                        the file explorer window.
+                    </p>
+
+                    <h3 class="heading" id="addArrow">Arrow</h3>
+                    <p>
+                        To add a new arrow shape to the GDP, click on the <img src="icons/arrowIcon2.PNG" width="20"
+                            height="17" />
+                        icon in the toolbar or simple shape submenu in the Add menu. Alternatively, you can press
+                        <b>Ctrl + Shift + A</b>.
+                    </p>
+
+                    <h3 class="heading" id="addLine">Line</h3>
+                    <p>
+                        To add a new line shape to the GDP, click on the <img src="icons/lineIcon2.PNG" width="20"
+                            height="17" />
+                        icon in the toolbar or simple shape submenu in the Add menu. Alternatively, you can press
+                        <b>Ctrl + Shift + L</b>.
+                    </p>
+
+                    <h3 class="heading" id="addArc">Arc</h3>
+                    <p>
+                        To add a new arc shape to the GDP, click on the <img src="icons/arcIcon2.PNG" width="20"
+                            height="15" />
+                        icon in the toolbar or simple shape submenu in the Add menu. Alternatively, you can press
+                        <b>Ctrl + Shift + K</b>.
+                    </p>
+
+                    <h3 class="heading" id="addEllipse">Ellipse</h3>
+                    <p>
+                        To add a new ellipse shape to the GDP, click on the <img src="icons/ovalIcon2.PNG" width="25"
+                            height="17" />
+                        icon in the toolbar or simple shape submenu in the Add menu. Alternatively, you can press
+                        <b>Ctrl + Shift + E</b>.
+                    </p>
+
+                    <h3 class="heading" id="addCircle">Circle</h3>
+                    <p>
+                        To add a new circle shape to the GDP, click on the <img src="icons/circleIcon2.PNG" width="18"
+                            height="18" />
+                        icon in the toolbar or simple shape submenu in the Add menu. Alternatively, you can press
+                        <b>Ctrl + Shift + C</b>.
+                    </p>
+
+                    <h3 class="heading" id="addRect">Rectangle</h3>
+                    <p>
+                        To add a new rectangle shape to the GDP, click on the <img src="icons/rectIcon2.PNG" width="20"
+                            height="17" />
+                        icon in the toolbar or simple shape submenu in the Add menu. Alternatively, you can press
+                        <b>Ctrl + Shift + R</b>
+                    </p>
+
+                    <h3 class="heading" id="addReglPoly">Regular Polygon</h3>
+                    <p>
+                        To add a new regular polygon shape to the GDP, click on the <img src="icons/polyIcon2.PNG"
+                            width="20" height="17" />
+                        icon in the toolbar or simple shape submenu in the Add menu. Alternatively, you can press
+                        <b>Ctrl + Shift + P</b>.
+                    </p>
+
+                    <h3 class="heading" id="addStarPoly">Star Polygon</h3>
+                    <p>
+                        To add a new star polygon shape to the GDP, click on the <img src="icons/starIcon2.PNG"
+                            width="20" height="17" />
+                        icon in the toolbar or simple shape submenu in the Add menu. Alternatively, you can press
+                        <b>Ctrl + Alt + P</b>
+                    </p>
+
+                    <h3 class="heading" id="addTriangle">Right-angle Triangle</h3>
+                    <p>
+                        To add a new right-angle triangle shape to the GDP, click on the <img
+                            src="icons/rTriangleIcon2.PNG" width="22" height="19" />
+                        icon in the toolbar or simple shape submenu in the Add menu. Alternatively, you can press
+                        <b>Ctrl + Shift + T</b>.
+                    </p>
+
+                    <h3 class="heading" id="addEmoji">Add Emoji</h3>
+                    <p>
+                        To add emoji(s), click on the <img src="icons2/emojiIcon.PNG" width="22" height="19" /> icon in
+                        the toolbar or Add menu.
+                        Alternatively, you can press <b>Ctrl + Alt + E</b>. This will bring up a dialog window
+                        containing
+                        several emojis and icons. Click on an emoji or icon to add it to the GDP.
+                    </p>
+
+                </div>
+
+                <div id="relocateGraphics">
+                    <h2 class="heading">Relocate Graphics</h2>
+                    <p>
+                        To relocate graphic object, that is move it to a different position on the GDP, move the mouse
+                        pointer to the location (position) of the graphics object then hold down the primary mouse
+                        button and drag the mouse to relocate the graphic object.
+                    </p>
+                </div>
+
+                <div id="styleAndAppearance">
+                    <h2 class="heading">Style and Appearance</h2>
+                    <p>
+                        To change the style, appearance or dimension of a graphic object double click on the object to
+                        highlight it, then adjust the properties from the buttons and controls in the toolbar or via the
+                        edit menu. Hover over the icons and controls on the toolbar to get hint about their functions.
+                    </p>
+                </div>
+
+                <div id="delClrGraphics">
+                    <h2 class="heading">Delete/Clear Graphics</h2>
+                    <p>
+                        To delete a graphic object, double click on the object to highlight it then click on the
+                        <img src="icons/deleteIconOriginal.PNG" width="20" height="17" />
+                        icon on the toolbar or the Delete menu. Alternatively, you can simply press <b>Ctrl + D</b> or
+                        only the <b>Delete</b> button on the keyboard to remove the object after double clicking on
+                        it to highlight it. To clear the GDP, that is remove all the graphics objects click on the
+                        <img src="icons/clearIconOriginal3.PNG" width="20" height="17" />
+                        icon on the toolbar or Delete menu. Alternatively, you can press <b>Ctrl + Alt + D or Alt +
+                            Delete</b> on the keyboard.
+                    </p>
+                </div>
+                <div id="zOrderReposition">
+                    <h2 class="heading">Z-order Repositioning</h2>
+                    <p>
+                        Z-order (or Z-axis) repositioning refers to changing the z-position of a graphic object on
+                        the GDP. That is how the graphics object are stacked on each other in the z-axis. As you add
+                        the graphic objects to the GDP the more recent ones are placed over the the older ones. You
+                        can re-order the graphic objects as follows:
+                    </p>
+
+                    <h3 class="heading" id="bForward">Bring Forward</h3>
+                    <p>
+                        To bring a graphic object one step forward in the z-ordering, double click on the graphic object
+                        to highlight it, then right click on the GDP. This will bring up a pop-up menu, click on the
+                        <img src="icons/bringForwardIconOriginal.PNG" width="20" height="17" /> icon. Alternatively, you
+                        can go to the Position submenu, in the Edit menu to access the icon or simply press <b>Ctr +
+                            shift + F</b>
+                        after highlighting the object.
+                    </p>
+
+                    <h3 class="heading" id="b2Front">Bring To Front</h3>
+                    <p>
+                        To bring a graphic object to the front, i.e. first position in the z-ordering, double click on
+                        the graphic
+                        object to highlight it, then right click on the GDP. This will bring up a pop-up menu, click on
+                        the
+                        <img src="icons/bringToFrontIconOriginal.PNG" width="20" height="17" /> icon. Alternatively, you
+                        can go
+                        to the Position submenu, in the Edit menu to access the icon or simply press <b>Ctr + Alt +
+                            F</b>
+                        after highlighting the object.
+                    </p>
+
+                    <h3 class="heading" id="sBackward">Send Backward</h3>
+                    <p>
+                        To send a graphic object one step backward in the z-ordering, double click on the graphic
+                        object to highlight it, then right click on the GDP. This will bring up a pop-up menu, click on
+                        the
+                        <img src="icons/sendBackwardOriginal.PNG" width="20" height="17" /> icon. Alternatively, you can
+                        go
+                        to the Position submenu, in the Edit menu to access the icon or simply press <b>Ctr + shift +
+                            B</b>
+                        after highlighting the object.
+                    </p>
+
+                    <h3 class="heading" id="s2Back">Send To Back</h3>
+                    <p>
+                        To send a graphic object to the back, i.e. last position in the z-ordering, double click on the
+                        graphic
+                        object to highlight it, then right click on the GDP. This will bring up a pop-up menu, click on
+                        the
+                        <img src="icons/sendToBackIconOriginal.PNG" width="20" height="17" /> icon. Alternatively, you
+                        can go
+                        to the Position submenu, in the Edit menu to access the icon or simply press <b>Ctr + Alt +
+                            B</b>
+                        after highlighting the object.
+                    </p>
+
+                </div>
+            </div>
+            <div id="file">
+                <h1 class="heading">File</h1>
+                <div id="newFile">
+                    <h2 class="heading">New File</h2>
+                    <p>
+                        A new file is created by default anytime you start the application. However to manually create a
+                        new file
+                        click on the <img src="icons/newFileIconOriginal.PNG" width="20" height="17" /> icon in the
+                        toolbar or File
+                        menu. Alternatively, you can press <b>Ctrl + N</b>.
+                    </p>
+                </div>
+
+                <div id="openFile">
+                    <h2 class="heading">Open File</h2>
+                    <p>
+                        To open an existing file, click on the <img src="icons/openFileIcon.PNG" width="20"
+                            height="17" />
+                        icon on the toolbar or file menu. Alternatively, you can press <b>Ctrl + O</b>. This will popup
+                        a file explorer
+                        window where you can navigate to the folder where the file you want to open is saved. When you
+                        have
+                        found the file double click on the file or click on the file and then click the <b>OK</b> button
+                        at the bottom of the
+                        file explorer window.
+                    </p>
+                </div>
+
+                <div id="appendFile">
+                    <h2 class="heading">Append File</h2>
+                    <p>
+                        To append an existing file, click on the <img src="icons/appendFileIconOriginal.PNG" width="20"
+                            height="17" />
+                        icon on the toolbar or file menu. Alternatively, you can press <b>Ctrl + A</b>. This will popup
+                        a file explorer
+                        window where you can navigate to the folder where the file you want to append is saved. When you
+                        have
+                        found the file double click on the file or click on the file and then click the "OK" button at
+                        the bottom of the
+                        file explorer window. <b>PLEASE NOTE:</b> appending a file will add all the graphics objects in
+                        the file been appended
+                        besides the background fill to the currently open or visible file (tab). The positions of the
+                        graphics objects
+                        that was added will be the same as in the original or source file.
+                    </p>
+                </div>
+
+                <div id="saveImage">
+                    <h2 class="heading">Save Image</h2>
+                    <p>
+                        To save a snapshot of your GDP, click on the <img src="icons/saveImageIconOriginal.PNG"
+                            width="20" height="17" />
+                        icon on the toolbar or file memu. Alternatively, you can press <b>Alt + S</b>. This will pop-up
+                        a dialog where
+                        you can select your preferred image format. After selecting your preferred image format click on
+                        the <b>OK</b> button.
+                        This will then open a file explorer window where you can change the name of the file as well as
+                        the folder to save
+                        the file. (Make sure that the file name always ends with proper file extension. For example if
+                        you select the "PNG"
+                        file format, then the name of the file MUST end with <b>".png"</b>.
+                    </p>
+                </div>
+
+                <div id="save">
+                    <h2 class="heading">Save</h2>
+                    <p>
+                        To save the most recent changes to the current viible file, click on the
+                        <img src="icons/saveIconOriginal2.PNG" width="20" height="17" /> icon on the toolbar or file
+                        menu.
+                        Alternatively, you can simply press <b>Ctrl + S</b>. If the file has not been saved to the disk
+                        yet, a
+                        file explorer window will popup where you can change the name of the file as well as the folder
+                        you want to save the file. <b>NOTE:</b> Please ensure that the file name always ends with the
+                        extention <b>".fte"</b>.
+                    </p>
+                </div>
+
+                <div id="saveAs">
+                    <h2 class="heading">Save As</h2>
+                    <p>
+                        To save the current visible file to the disk click on the, <img src="icons/saveIconOriginal.PNG"
+                            width="20" height="17" />
+                        icon in the file menu. Alternatively, you can simply press <b>Ctrl + Alt + S</b>. This will take
+                        you to a file explorer window where you can change the name of the file as well as the folder
+                        you want
+                        the file to be saved. NOTE: Make sure that the file name always ends with the extention
+                        <b>".fte"</b>.
+                    </p>
+                </div>
+
+                <div id="saveAll">
+                    <h2 class="heading">Save All</h2>
+                    <p>
+                        To save all open files to the disk, click on the, <img src="icons/saveAllIconOriginal.PNG"
+                            width="20" height="17" />
+                        icon on the toolbar or file menu. Alternatively, you can simply press <b>Ctrl + shift + S</b>.
+                        This will automatically save the most recent changes in all the files to the disk one
+                        after the other. If any file has not yet been saved to the disk, a file explorer window will
+                        popup where you can change the name of the file as well as the folder where you want the file
+                        to be saved. <b>NOTE:</b> Make sure that the file name always ends with the extention
+                        <b>".fte"</b>.
+                    </p>
+                </div>
+
+                <div id="close">
+                    <h2 class="heading">Close</h2>
+                    <p>
+                        To close a tab click on the tab in the tab pane, then click on the <b>X</b> icon on the tab to
+                        close it
+                        or simply press <b>Alt + X</b>. Alternatively, you can right click anywhere on the GDP to bring
+                        up a pop-up
+                        menu. Click on the <img src="icons/closeIconOriginal.PNG" width="20" height="17" /> icon in the
+                        pop-up menu
+                        to close the tab. You can also find the close icon in the file menu in the menu bar.
+                    </p>
+                </div>
+
+                <div id="closeAll">
+                    <h2 class="heading">Close All</h2>
+                    <p>
+                        To close all the currently open tabs in the tab pane, right click anywhere on the GDP of any
+                        active or visible tab
+                        to bring up a pop-up menu. Click on the <img src="icons/closeAllIconOriginal.PNG" width="20"
+                            height="17" />
+                        icon in the pop-up menu to close all tabs or simple press <b>Ctrl + Alt + X</b>. You can also
+                        find the <i>"Close All"</i>
+                        icon in the file menu in the menu bar. <b>Please note:</b> after all tabs are closed a new empty
+                        file will automatically
+                        be created.
+                    </p>
+                </div>
+
+            </div>
+            <div id="exit">
+                <h1 class="heading">Exit</h1>
+                <p>
+                    To exit the application click on the <b style="color: red">X</b> icon on the main window or go to
+                    the File menu
+                    in the menu bar and click on Exit.
+                </p>
+            </div>
+
+            <div id="conclusion">
+                <h1 class="heading">Conclusion</h1>
+                <p>
+                    Congratulations on going through this beginers guide on how to use FancyText. Please note, this is
+                    just a brief
+                    introduction on how to use the software. Please take time to explore the software to uncover it's
+                    subtleties
+                    and advanced functionalities in order for you to maximise the full potential of the software.
+                </p>
+            </div>
+
+            <div id="footer">
+                <div id="footer_div">
+                    <p id="footerImgPara"><img src="icons/AikSoft_Logo_Transparent2.PNG" alt="logo" id="footerLogo" /></p>
+                    <p id="copyrightPara">Copyright(C) 2020. Aikien Softwares, Inc. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src=fteHelp.js></script>
+</body>
+
+</html>

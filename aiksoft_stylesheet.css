@@ -1,0 +1,835 @@
+
+    html, body{
+        height: 100%;
+        width: 100%;
+    }
+    
+    body{
+        margin: 0%;
+        background-image: url(icons/homeBack2.jpeg);
+    }
+    
+    #welcomeMessage{
+        font-size: 5em;
+        color: magenta;
+        text-shadow: 5px 5px 5px rgb(48, 20, 173);
+    }
+    
+    #all{
+        min-height: 100%;
+        width: 100%;
+        margin:0%;
+    }
+    
+    #heading{
+        position: relative;
+        text-align: center;
+        padding: 0%;
+        background-color: rgba(255, 160, 122, 0.562);
+    }
+    
+    #product_img{
+        width: 100%;
+        margin-top: 0;
+    }
+
+    #aiksoftLogo{
+        padding-top: 10px;
+        width: 260px;
+    }
+    
+    #moto{
+        margin: 0px;
+        color:rgb(39, 3, 39);
+    }
+    
+    #navBar{
+        background-color: rgba(255, 160, 122, 0.562);
+        width: 98%;
+        float: left;
+        padding-right: 1%;
+        padding-left: 1%;
+        padding-top: 10px;
+        display: block;
+        margin: 0;
+        /*
+        overflow: hidden;
+        padding-left: 10px; 
+        display: -moz-box;
+        display: -webkit-box;
+        display:box;
+        */
+    } 
+    
+    #navBar div{
+        min-width: 10%;
+        margin-left: 5px;
+        float: left;
+    }
+    
+    #navBar div div{
+        display: none;
+        position: absolute;
+    }
+
+    #navBarWrapper{
+        display: none;
+    }
+    
+    #products:hover div{
+        display: block;
+    }
+    
+    #services:hover div{
+        display: block;
+    }  
+    
+    .headLink{
+        font-size: 20px;
+    }
+    
+    a:hover{
+        text-decoration: none;
+        color:rgb(126, 167, 126);
+    } 
+    
+    h1, h2, h3, h4, h5, h6{
+        color:lightsalmon;
+    }
+    
+    .navLinks{
+        background-color: rgba(255, 160, 122, 0.562);
+        box-shadow: 2px 2px 2px rgb(59, 58, 58);
+    }
+    
+    .homeDiv{
+        font-size: 1.2em;
+        color: lightsalmon;
+    }
+    
+    .photo{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 10px;
+    }
+    
+    #footer{
+        clear: both;
+        background-color: rgba(255, 160, 122, 0.562);
+        padding-top: 5px;  
+    }
+    
+    #footer_div{
+        display: -moz-box;
+        display: -webkit-box;
+        -moz-box-orient: horizontal;
+        -webkit-box-orient: horizontal; 
+        width: 40%;
+        margin: auto;
+        text-align: center;
+        padding-bottom: 5px;
+        padding-top:5px;  
+        color:rgb(39, 3, 39);
+    }
+    
+    #footer_div p{
+        padding: 0;
+        margin:auto;
+    }
+
+    #copyrightPara{
+        font-size: bold;
+    }
+    
+    .socialMediaHandle{   
+        padding-left: 20px;
+    } 
+    #socialMediaLinks{
+        text-align: center;
+        /*max-width:280px;*/
+    }
+    
+    a img{
+        border-width: 0;
+    }
+
+    .contentWrap{
+        min-height: calc(100vh - 173px);
+        clear: both;
+    }
+    
+    .content{
+        min-height: calc(100vh - 230px);
+        /*min-height: 63.4vh;*/
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    .title{
+        text-align: center;
+        margin-top: 0; 
+        color: rgb(121, 60, 150);
+        font-weight: bold;
+        
+    }
+    
+    #welcomeMessage2{
+        color: rgb(73, 20, 73);
+    }
+    
+    #welcomePara{
+        text-align: center;
+    }
+
+    #welcome1{
+        width: 95%;
+        margin: 0;
+        padding: 0;
+    }
+    
+    #about p, li{
+        font-size: 20px;
+        color: lightsalmon;
+    }
+    
+    #desktopMobileServ{
+        font-size: 20px;
+        color: lightsalmon;
+    }
+    
+    #servicesDiv, #contact, #about{
+        padding-top: 20px;
+        font-size: 20px;
+        color: lightsalmon;
+    }
+
+    #contact h1, #about h1, #about h2, #servicesDiv h1{
+        background-color: rgba(255, 255, 255, 0.719);
+        width: fit-content;
+        border-radius: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    #servicesDiv div div{
+        margin: 10px;
+        float: left;
+        width: 40%;
+        border: 4px solid lightsalmon;
+        padding-left: 10px;
+        border-radius: 20px;
+        padding-bottom: 0;
+    }
+
+    .servInfo{
+        background-color: rgba(255, 255, 255, 0.774);
+        border-radius: 20px;
+        padding: 10px;
+    }
+    
+    #servicesDiv div h2{
+        margin: 0;
+    }
+    
+    #serDiv1, #serDiv2{
+        padding: 15px;
+    }
+    
+    #serDiv3, #serDiv4{
+        padding: 15px
+    }
+    
+    img{
+        max-width: 100%;
+    }
+
+    .servImg{
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+    
+    .serDivOuter{
+        clear: both;
+    }
+
+    #welcome2{
+        border-radius: 20px;
+        border: 3px solid rgb(121, 60, 150);
+        color:  rgb(121, 60, 150);
+        background-color: rgba(255, 255, 255, 0.815);
+        float: left;
+        width: 350px;
+        padding: 10px;
+        margin: 20px;
+    }
+
+    #welcome3{
+        float:left;
+        min-width: 350px;
+        margin: 20px;
+        padding: 20px;
+        border: 3px solid rgb(121, 60, 150);
+        color:rgb(121, 60, 150);
+        background-color: rgba(255, 255, 255, 0.815);
+        border-radius: 20px;
+    }
+
+    #welcome3 p{
+        margin: 0;
+    }
+
+    #softAdv{
+        margin: 0;
+    }
+
+    #softAdv li{
+        color:rgb(121, 60, 150);
+    }
+
+    
+    #ftInfoDiv{
+        border: 3px solid lightgreen;
+        clear: both;
+        height: fit-content;
+        width: fit-content;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 0;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: rgba(255, 255, 255, 0.815);
+    }
+
+    #ftdesc{
+        max-width: 1180px;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-left: 0;
+        margin-right: 0;
+        border-radius: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        color:rgb(39, 95, 39);
+    }
+
+    #ftPhoto{
+        margin: 0;
+        padding: 0;
+    }
+    
+    #welcome4{
+        float:left;
+        width: 350px;
+        /*min-height: 385px;*/
+        margin: 20px;
+        padding: 10px;
+        border: 3px solid rgb(70, 19, 151);
+        color:rgb(70, 19, 151);
+        background-color: rgba(255, 255, 255, 0.815);
+        border-radius: 20px;
+    }
+
+    #welcome5{
+        float: left;
+        padding: 10px;
+        margin: 20px;
+        border-radius: 20px;
+        border: 3px solid rgb(70, 19, 151);
+        background-color: rgba(255, 255, 255, 0.815);
+        width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+        color:rgb(70, 19, 151);
+    }
+
+    #points{
+        margin-left: auto;
+        margin-right: auto;
+        clear:both;
+        min-height: 200px;
+        max-width: 900px;
+    }
+    
+    #pLangLogo{
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1050px;
+    }
+
+    #welcome6{
+        color:rgb(163, 47, 173);
+        /*text-align: center;*/
+        font-size: 40px;
+        font-weight: bold;
+        clear: both;
+        background-color: rgba(255, 255, 255, 0);
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        margin-bottom: 15px;
+        border: 4px dashed;
+        border-radius: 20px;
+    }
+
+    #welcome6 p{
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+
+    #intro{
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 900px;
+        clear: both;
+    }
+
+ /*************************************************End 1366px size screen***************************************/
+
+@media (max-width: 600px){
+    html, body{
+        min-height: 100%;
+        min-width: 100%;
+    }
+
+    body{
+        margin: 0;
+    }
+    
+    #welcomeMessage{
+        font-size: 2.5em;
+        color: magenta;
+        text-shadow: 5px 5px 5px rgb(48, 20, 173);
+    }
+    
+    #all{
+        min-height: 100%;
+        width: 100%;
+        margin:0;
+    }
+    
+    #heading{
+        text-align: center;
+        padding: 0;
+        background-color: rgba(255, 160, 122, 0.562);
+        width: 100%;
+    }
+    
+    #product_img{
+        width: 100%;
+    }
+
+    #aiksoftLogo{
+        padding-top: 10px;
+        width: 180px;
+    }
+    
+    #moto{
+        margin: 0px;
+        color:rgb(39, 3, 39);
+    }
+    
+    #navBar{
+        background-color: rgba(255, 160, 122, 0.562);
+        width: 100%;
+        /*float: left;*/
+        clear: both;
+        padding-right: 10px;
+        padding-left: 10px;
+        display: none;
+        position: absolute;
+        top: 146px;
+        left: 0;
+        /*
+        overflow: hidden;
+        padding-left: 10px; 
+        display: -moz-box;
+        display: -webkit-box;
+        display:box;
+        */
+    } 
+
+    #navBarWrapper{
+        max-width: 30px;
+        max-height: 32x;
+        padding: 5px;
+    }
+
+    #navBarWrapper hr{
+        border: 2px solid white;
+        padding: 0;
+        margin: 4px 2px;
+    }
+
+    #navBarWrapper p{
+        color: white;
+        font-size: 23px;
+        margin: 0;
+        padding: 0;
+        display: none;
+        border: 1px solid white;
+    }
+    
+    #navBar div{
+        width: 100%;
+        /*float: left;*/
+        clear: both;
+        display: block;
+        margin-right: 5px;
+        position: relative;
+    }
+    
+    #navBar div div{
+        display: none;
+        position: absolute;
+        padding-left: 10px;
+        width: fit-content;
+    }
+
+    #navBarWrapper{
+        display: block;
+    }
+    
+    #products:hover div{
+        display: block;
+    }
+    
+    #services:hover div{
+        display: block;
+    }  
+    
+    .headLink{
+        font-size: 20px;
+    }
+    
+    a:hover{
+        text-decoration: none;
+        color:rgb(126, 167, 126);
+    } 
+    
+    h1, h2, h3, h4, h5, h6{
+        color:lightsalmon;
+    }
+    
+    .navLinks{
+        background-color: rgba(255, 160, 122, 0.623);
+        box-shadow: 2px 2px 2px rgb(59, 58, 58);
+        z-index: 20;
+    }
+    
+    /*
+        .homeDiv{
+        font-size: 1.2em;
+        color: lightsalmon;
+    }
+    */
+
+    #ftInfoDiv{
+        border: 3px solid lightgreen;
+        height: fit-content;
+        width: fit-content;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 0;
+    }
+    
+    .photo{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 10px;
+    }
+    
+    #footer{
+        clear: both;
+        background-color: rgba(255, 160, 122, 0.562);
+        padding-top:5px; 
+        max-width: 100%; 
+    }
+    
+    #footer_div{
+        /*
+        display: -moz-box;
+        display: -webkit-box;
+        -moz-box-orient: horizontal;
+        -webkit-box-orient: horizontal; 
+        */
+        display: block;
+        width: 95%;
+        height: fit-content;
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        padding-bottom: 5px;
+        padding-top: 5px;  
+    }
+    
+    #footer_div p{
+        padding: 0px;
+        float: left;
+        margin: auto;
+        width: 100%;
+        background-color: rgba(255, 160, 122, 0.562);
+    }
+    
+    .socialMediaHandle{   
+        padding-left: 3%;
+    } 
+    #socialMediaLinks{
+        max-width:95%;
+        text-align: center;
+    }
+    
+    a img{
+        border-width: 0px;
+    }
+
+    .contentWrap{
+        min-height: calc(100vh - 173px);
+    }
+    
+    .content{
+        min-height: calc(100vh - 88px);
+        /*min-height: 63.4vh;
+        
+        */
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    .title{
+        text-align: center;
+        margin-top: 0px; 
+        color: rgb(121, 60, 150);
+        font-weight: bold;
+        
+    }
+    
+    #welcomeMessage2{
+        color: rgb(73, 20, 73);
+    }
+    
+    #welcomePara{
+        text-align: center;
+    }
+
+    #welcome1{
+        width: 100%;
+        margin: 0%;
+        padding: 0%;
+    }
+    
+    #about p, li{
+        font-size: 20px;
+        color: lightsalmon;
+        text-align: justify;
+    }
+    
+    #desktopMobileServ{
+        font-size: 20px;
+        color: lightsalmon;
+    }
+    
+    #servicesDiv, #contact, #about{
+        padding-top: 20px;
+        font-size: 20px;
+        color: lightsalmon;
+    }
+    
+    #servicesDiv div div{
+        /*margin: 5%;*/
+        width: 90%;
+        border: 4px solid lightsalmon;
+        padding: 2%;
+        border-radius: 20px;
+        padding-bottom: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #contact h1, #about h1, #about h2, #servicesDiv h1{
+        background-color: rgba(255, 255, 255, 0.719);
+        width: fit-content;
+        border-radius: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .servInfo{
+        background-color: rgba(255, 255, 255, 0.774);
+        border-radius: 20px;
+        padding: 10px;
+    }
+    
+    #servicesDiv div h2{
+        margin: 0;
+    }
+    
+    #serDiv1, #serDiv2{
+        /*min-height: 720px;*/
+        padding: 2%;
+    }
+    
+    #serDiv3, #serDiv4{
+        /*min-height: 420px;*/
+        padding: 2%;
+    }
+    
+    img{
+        max-width: 100%;
+    }
+
+    .servImg{
+        margin-top: 0%;
+        margin-bottom: 10px;
+    }
+    
+    .serDivOuter{
+        clear: both;
+    }
+
+    #welcome2{
+        float: none;
+        border-radius: 20px;
+        border: 1% solid rgb(121, 60, 150);
+        color:  rgb(121, 60, 150);
+        background-color: rgba(255, 255, 255, 0.815);
+        width: 90%;
+        padding: 2%;
+        margin: 2%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #welcome3{
+        float: none;
+        border-radius: 20px;
+        border: 1% solid rgb(121, 60, 150);
+        color:rgb(121, 60, 150);
+        background-color: rgba(255, 255, 255, 0.815);
+        width: fit-content;
+        padding: 2%;
+        margin: 2%;
+        min-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #welcome3 p{
+        margin: 0;
+        max-width: fit-content;
+    }
+
+    #softAdv li{
+        color:rgb(121, 60, 150);
+        max-width: fit-content;
+    }
+
+    #ftInfoDiv{
+        border: 3px solid lightgreen;
+        clear: both;
+        height: fit-content;
+        max-width: 95%;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-top: 0px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: rgba(255, 255, 255, 0.815);
+    }
+
+    #ftdesc{
+        max-width: 95%;
+        padding-left: 1%;
+        padding-right: 1%;
+        margin-left: 0;
+        margin-right: 0;
+        border-radius: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    #welcome4{
+        clear: both;
+        max-width: 95%;
+        margin: 2%;
+        padding: 2%;
+        border: 3px solid rgb(70, 19, 151);
+        color:rgb(70, 19, 151);
+        background-color: rgba(255, 255, 255, 0.815);
+        border-radius: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #welcome5{
+        clear: both;
+        padding: 2%;
+        margin: 2%;
+        border-radius: 20px;
+        border: 3px solid rgb(70, 19, 151);
+        background-color: rgba(255, 255, 255, 0.815);
+        max-width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+        color:rgb(70, 19, 151);
+    }
+
+    #points{
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+        min-height: fit-content;
+        max-width: 98%;
+    }
+    
+    #pLangLogo{
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 90%;
+    }
+
+    #pLangLogo img{
+        width:12%
+    }
+
+    #welcome6{
+        color:rgb(163, 47, 173);
+        font-size: 1.4em;
+        font-weight: bold;
+        clear: both;
+        background-color: rgba(255, 255, 255, 0);
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 15px;
+        border: 4px dashed;
+        border-radius: 20px;
+    }
+
+    #welcome6 p{
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+
+   /*
+     #intro{
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 98%;
+        clear:both;
+    }
+   */
+
+} 
+
+/************************************************end 600px screen size**********************************************/
