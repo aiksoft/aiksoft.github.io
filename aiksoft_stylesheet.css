@@ -417,7 +417,6 @@
         padding: 0;
         background-color: rgba(255, 160, 122, 0.562);
         width: 100%;
-        margin-bottom: auto;
     }
     
     #product_img{
@@ -438,21 +437,12 @@
         background-color: rgba(255, 160, 122, 0.562);
         width: 100%;
         height: fit-content;
-        /*float: left;*/
         clear: both;
         display: none;
         padding: 0;
         position: absolute;
-        margin-top: 10px;
-        top: 146px;
+        top: 147px;
         left: 0;
-        /*
-        overflow: hidden;
-        padding-left: 10px; 
-        display: -moz-box;
-        display: -webkit-box;
-        display:box;
-        */
     } 
 
     #navBarWrapper{
