@@ -17,7 +17,7 @@ var currEmojiPreview = document.getElementById("emojiPreview");
 
 function animateHeading() {
     loadHome();
-    animFumc = setInterval(glowHeading, 15);
+    // animFumc = setInterval(glowHeading, 15);
     showFirstSlide();
     autoSlideFunc = setInterval(doAutoSlide, 5000);
     autoPrevFont = setInterval(autoShowNextFontPrev, 4000);

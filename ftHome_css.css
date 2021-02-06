@@ -27,6 +27,16 @@
         margin: 0px;
         color:rgb(35, 15, 146);
         text-align: center;
+        animation: blinkMoto  0.5s ease-in-out infinite alternate;
+    }
+
+    @keyframes blinkMoto{
+        from{
+            opacity: 1;
+        }
+        to{
+            opacity: 0;
+        }
     }
     
     #navBar{
