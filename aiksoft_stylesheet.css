@@ -526,7 +526,7 @@ img{
 @media (max-width: 736px){
     #welcomeMessage{
         position: absolute;
-        font-size: 3.6em;
+        font-size: 3.2em;
         color: magenta;
         animation: glow5 1s ease-in-out infinite alternate;
         text-shadow: 0 0 30px rgb(48, 20, 173);
@@ -537,10 +537,10 @@ img{
     
     @keyframes glow5{
         from{
-            font-size: 3.6em;
+            font-size: 3.2em;
         }
         to {
-            font-size: 3.1em;
+            font-size: 2.7em;
         }
     }
     
