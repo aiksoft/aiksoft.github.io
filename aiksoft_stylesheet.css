@@ -587,13 +587,13 @@ img{
         display: none;
         padding: 0;
         position: absolute;
-        top: 9.2em;
+        top: 148px;
         left: 0;
         z-index: 2;
     } 
 
     #navBarWrapper{
-        height: fit-content;
+        min-height: 30px;
         min-width: 98%;
         padding: 5px;
         margin-bottom: 5px;
