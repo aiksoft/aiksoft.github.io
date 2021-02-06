@@ -551,7 +551,7 @@ img{
 
 /**************************************************End 736px screen size*******************************************************/
 
- @media (max-width: 640px){
+ @media (max-width: 680px){
 
     html, body{
         height: 100%;
@@ -973,7 +973,458 @@ img{
 
  }
 
- /***********************************************End 640px screen size******************************************/
+ /***********************************************End 680px screen size********************************************************/
+
+ @media (max-width: 640px){
+    html, body{
+        min-height: 100%;
+        min-width: 100%;
+    }
+
+    body{
+        margin: 0;
+    }
+
+    #welcomeMessage{
+        font-size: 2.5em;
+        color: magenta;
+        animation: glow3 1s ease-in-out infinite alternate;
+        text-shadow: 0 0 20px rgb(48, 20, 173);
+        left: 7%;
+        top: 0;
+    }
+
+    @keyframes glow3{
+        from{
+            font-size: 3.0em;
+        }
+        to {
+            font-size: 2.5em;
+        }
+    }
+    
+    #all{
+        min-height: 100%;
+        width: 100%;
+        margin:0;
+    }
+    
+    #heading{
+        text-align: center;
+        padding: 0;
+        background-color: rgba(255, 160, 122, 0.562);
+        width: 100%;
+        height:fit-content
+    }
+    
+    #product_img{
+        width: 100%;
+    }
+
+    #aiksoftLogo{
+        padding-top: 10px;
+        width: 180px;
+    }
+    
+    #moto{
+        margin: 0px;
+        color:rgb(39, 3, 39);
+    }
+    
+    #navBar{
+        background-color: rgba(255, 160, 122, 0.562);
+        width: 100%;
+        height: fit-content;
+        clear: both;
+        display: none;
+        padding: 0;
+        position: absolute;
+        top: 9.2em;
+        left: 0;
+        z-index: 2;
+    } 
+
+    #navBarWrapper{
+        max-width: 30px;
+        height: fit-content;
+        padding: 5px;
+        margin-bottom: 5px;
+    }
+
+    #navBarWrapper hr{
+        border: 1px solid white;
+        padding: 0;
+        margin: 6px 2px;
+    }
+
+    #navBarWrapper p{
+        color: white;
+        font-size: 24px;
+        margin: 0;
+        padding: 0;
+        display: none;
+        border: 1px solid white;
+    }
+    
+    #navBar div{
+        width: fit-content;
+        clear: both;
+        display: block;
+        padding-left: 5px;
+        position: relative;
+    }
+    
+    #navBar div div{
+        display: none;
+        position: absolute;
+        padding-left: 10px;
+        width: fit-content;
+    }
+
+    #navBarWrapper{
+        display: block;
+    }
+    
+    #products:hover div{
+        display: block;
+    }
+    
+    #services:hover div{
+        display: block;
+    }  
+    
+    .headLink{
+        font-size: 20px;
+    }
+    
+    a:hover{
+        text-decoration: none;
+        color:rgb(126, 167, 126);
+    } 
+    
+    h1, h2, h3, h4, h5, h6{
+        color:lightsalmon;
+    }
+    
+    .navLinks{
+        background-color: rgba(255, 160, 122, 0.623);
+        box-shadow: 2px 2px 2px rgb(59, 58, 58);
+        z-index: 20;
+    }
+    
+    /*
+        .homeDiv{
+        font-size: 1.2em;
+        color: lightsalmon;
+    }
+    */
+    
+    .photo{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 10px;
+    }
+    
+    #footer{
+        clear: both;
+        display: block;
+        /*background-color: rgba(255, 160, 122, 0.562);*/
+        padding-top:5px; 
+        max-width: 100%; 
+        min-height: 130px;
+    }
+    
+    #footer_div{
+        /*
+        display: -moz-box;
+        display: -webkit-box;
+        -moz-box-orient: horizontal;
+        -webkit-box-orient: horizontal; 
+        */
+        clear: both;
+        display: block;
+        width: 95%;
+        height: fit-content;
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        padding-bottom: 5px;
+        padding-top: 5px;  
+    }
+    
+    #footer_div p{
+        padding: 0px;
+        float: left;
+        margin: auto;
+        width: 100%;
+        /*background-color: rgba(255, 160, 122, 0.562);*/
+    }
+    
+    .socialMediaHandle{   
+        padding-left: 3%;
+    } 
+    #socialMediaLinks{
+        max-width:95%;
+        text-align: center;
+    }
+    
+    a img{
+        border-width: 0px;
+    }
+
+    .contentWrap{
+        min-height: calc(100vh - 173px);
+    }
+    
+    .content{
+        
+        height: 100%;
+        /*min-height: 63.4vh;
+         min-height: calc(100vh - 88px);
+        
+        */
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    .title{
+        text-align: center;
+        margin-top: 0px; 
+        color: rgb(121, 60, 150);
+        font-weight: bold;
+        
+    }
+    
+    #welcomeMessage2{
+        color: rgb(197, 48, 172);
+        margin-top: 3.0em;
+        text-shadow: 0 0 5px blue;
+    }
+    
+    #welcomePara{
+        text-align: center;
+    }
+
+    #welcome1{
+        width: 100%;
+        margin: 0%;
+        padding: 0%;
+    }
+    
+    #about p, li{
+        font-size: 20px;
+        color: lightsalmon;
+        text-align: justify;
+    }
+    
+    #desktopMobileServ{
+        font-size: 20px;
+        color: lightsalmon;
+    }
+    
+    #servicesDiv, #contact, #about{
+        padding-top: 20px;
+        font-size: 20px;
+        color: lightsalmon;
+    }
+    
+    #servicesDiv div div{
+        /*margin: 5%;*/
+        width: 90%;
+        border: 4px solid lightsalmon;
+        padding: 2%;
+        border-radius: 20px;
+        padding-bottom: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #contact h1, #about h1, #about h2, #servicesDiv h1{
+        background-color: rgba(255, 255, 255, 0.719);
+        width: fit-content;
+        border-radius: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .servInfo{
+        background-color: rgba(255, 255, 255, 0.774);
+        border-radius: 20px;
+        padding: 10px;
+    }
+    
+    #servicesDiv div h2{
+        margin: 0;
+    }
+    
+    #serDiv1, #serDiv2{
+        /*min-height: 720px;*/
+        padding: 2%;
+    }
+    
+    #serDiv3, #serDiv4{
+        /*min-height: 420px;*/
+        padding: 2%;
+    }
+    
+    img{
+        max-width: 100%;
+    }
+
+    .servImg{
+        margin-top: 0%;
+        margin-bottom: 10px;
+    }
+    
+    .serDivOuter{
+        clear: both;
+    }
+
+    #welcome2{
+        float: none;
+        border-radius: 20px;
+        border: 1% solid rgb(121, 60, 150);
+        color:  rgb(121, 60, 150);
+        background-color: rgba(255, 255, 255, 0.815);
+        min-width: 75%;
+        max-width: 80%;
+        padding: 2%;
+        margin: 2%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #welcome3{
+        float: none;
+        border-radius: 20px;
+        border: 3px solid rgb(121, 60, 150);
+        color:rgb(121, 60, 150);
+        background-color: rgba(255, 255, 255, 0.815);
+        width: fit-content;
+        padding: 2%;
+        margin: 2%;
+        min-width: 75%;
+        max-width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        min-height: fit-content;
+    }
+
+    #welcome3 p{
+        margin: 0;
+        max-width: fit-content;
+    }
+
+    #softAdv li{
+        color:rgb(121, 60, 150);
+        max-width: fit-content;
+    }
+
+    #ftInfoDiv{
+        border: 3px solid lightgreen;
+        clear: both;
+        height: fit-content;
+        min-width: 75%;
+        max-width: 80%;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        padding: 0%;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: rgba(255, 255, 255, 0.815);
+    }
+
+    #ftdesc{
+        min-width: 100%;
+        max-width: 100%;
+        padding-left: 1%;
+        padding-right: 1%;
+        margin-left: 0;
+        margin-right: 0;
+        border-radius: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    #welcome4{
+        float: none;
+        max-width: 100%;
+        min-width: 95%;
+        margin: 2%;
+        padding: 2%;
+        border: 3px solid rgb(70, 19, 151);
+        color:rgb(70, 19, 151);
+        background-color: rgba(255, 255, 255, 0.815);
+        border-radius: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        min-height: fit-content;
+    }
+
+    #welcome5{
+        float: none;
+        padding: 2%;
+        margin: 2%;
+        border-radius: 20px;
+        border: 3px solid rgb(70, 19, 151);
+        background-color: rgba(255, 255, 255, 0.815);
+        min-width: 95%;
+        max-width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+        color:rgb(70, 19, 151);
+    }
+
+    #points{
+        margin-left: auto;
+        margin-right: auto;
+        clear: both;
+        min-height: fit-content;
+        max-width: 80%;
+    }
+    
+    #pLangLogo{
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 80%;
+    }
+
+    #pLangLogo img{
+        width:12%
+    }
+
+    #welcome6{
+        color:rgb(163, 47, 173);
+        font-size: 1.4em;
+        font-weight: bold;
+        clear: both;
+        background-color: rgba(255, 255, 255, 0);
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 15px;
+        border-radius: 20px;
+    }
+
+    #welcome6 p{
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+
+   /*
+     #intro{
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 98%;
+        clear:both;
+    }
+   */
+
+} 
+
+ /*****************************************************End 640px screen size****************************************************/
 
 @media (max-width: 600px){
     html, body{
