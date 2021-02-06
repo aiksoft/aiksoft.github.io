@@ -13,7 +13,7 @@ function loadHome() {
 
     $(window).resize(function () {
         var width = $(window).width();
-        if (width > 640) {
+        if (width > 736) {
             navBar.style.display = "block";
         } else {
             hideNavbar();
