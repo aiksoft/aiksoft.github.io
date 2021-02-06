@@ -166,6 +166,10 @@ function toggleMenuVisibility() {
         }
         navBarX.style.display = "block";
     }
+
+    var sizeTest = document.getElementById("sizeTest")
+    var navWrapHeight = document.getElementById("navBarWrapper");
+    sizeTest.innerHTML = "" + navWrapHeight.offsetHeight;
 }
 
 function hideNavbar() {
