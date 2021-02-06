@@ -588,20 +588,16 @@ img{
         padding: 0;
         padding-top: 10px;
         position: absolute;
-        top: 140px;
+        top: 150px;
         left: 0;
         z-index: 2;
     } 
 
     #navBarWrapper{
         min-height: 30px;
-        min-width: 98%;
+        max-width: 30px;
         padding: 5px;
         margin-bottom: 5px;
-        background-color: rgba(255, 160, 122, 0.562);
-    }
-
-    #navBarWrapper div{
         max-width: 30px;
     }
 
@@ -616,11 +612,10 @@ img{
         text-align: center;
     }
 
-    #navBarWrapper div hr{
+    #navBarWrapper p hr{
         border: 1px solid white;
         padding: 0;
         margin: 6px 2px;
-        max-width: 30px;
     }
     
     #navBar div{
