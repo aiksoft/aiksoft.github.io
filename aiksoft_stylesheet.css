@@ -73,14 +73,12 @@ body{
 
 #products:hover div{
     display: block;
+    position: absolute;
+    z-index: 4;
 }
 
-#services:hover div{
-    display: block;
-}  
-
 .headLink{
-    font-size: 20px;
+    font-size: 1.3em;
 }
 
 a:hover{
@@ -580,7 +578,7 @@ img{
     }
     
     #navBar{
-        background-color: rgba(63, 175, 11, 0.562);
+        background-color: rgba(255, 160, 122, 0.562);
         width: 100%;
         height: fit-content;
         clear: both;
@@ -588,7 +586,7 @@ img{
         padding: 0;
         padding-top: 10px;
         position: absolute;
-        top: 141px;
+        top: 143px;
         left: 0;
         z-index: 2;
     } 
