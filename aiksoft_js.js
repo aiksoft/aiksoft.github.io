@@ -182,7 +182,7 @@ function hideNavbar() {
 
 function hidNav(){
     var width = $(window).width();
-    if (width < 600 &&  navBar.style.display === "block"){
+    if (width <= 736 &&  navBar.style.display === "block"){
         hideNavbar();
     }
 }
