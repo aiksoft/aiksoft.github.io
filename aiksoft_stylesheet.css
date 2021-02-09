@@ -933,6 +933,7 @@ img{
         clear: both;
         background-color: rgba(255, 255, 255, 0);
         width: fit-content;
+        width: -moz-min-content;
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 15px;
