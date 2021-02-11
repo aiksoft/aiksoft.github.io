@@ -59,12 +59,13 @@
     }
     
     #navBar{
-        margin-top: 0%;
+        margin-top: 0;
         background-color: rgb(29, 78, 23);
         width: 98%;
         float: left;
         padding-right: 1%;
         padding-left: 1%;
+        padding-top: 15px;
     }
     
     #navBar div{
@@ -473,7 +474,7 @@
 
 /******************************************end 1366px screen****************************************************/
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 736px){
     html, body{
         min-width: 100%;
         min-height: 100%;
@@ -510,6 +511,7 @@
     
     #navBar{
         margin-top: 0;
+        padding-top: 20px;
         width: 98%;
         position: absolute;
         /*float: left;*/
@@ -571,7 +573,7 @@
     }
 
     #footer_div p{
-        float: left;
+        clear: both;
         padding-left: 5px;
         max-width: 95%;
     }
