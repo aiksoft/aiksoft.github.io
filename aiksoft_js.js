@@ -8,18 +8,23 @@ function loadHome() {
     navBar = document.getElementById("navBar");
     navBarX = document.getElementById("navbarXIcon");
     navbarLines = document.getElementsByClassName("navbarLines");
+
     navbarIsVisible = false;
     showHome();
     $("#homeLink").css({ "text-decoration": "none", "color": "rgb(126, 167, 126)" });
 
-    $(window).resize(function () {
+    /*
+        $(window).resize(function () {
         var width = $(window).width();
+        var navBarWrapper = document.getElementById("navBarWrapper");
+
         if (width > 736) {
-            navBar.style.display = "block";
-        } else {
             hideNavBar();
-        }
+            navBarShown = false;
+            navBarWrapper.style.display = "block";
+        } 
     });
+    */
 }
 
 function showHome() {
@@ -160,7 +165,6 @@ function toggleNavbarVisibility(){
         navBarX.style.display = "block";
         navBarShown = true;
     }
-    
 }
 
 function hideNavBar() {
@@ -178,8 +182,3 @@ function hidNav(){
         navBar.style.height = "0";
     }
 }
-
-
-
-
-
