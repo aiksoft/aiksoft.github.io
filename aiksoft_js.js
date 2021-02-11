@@ -158,10 +158,12 @@ $("img").mousedown(function (e) {
 
 function toggleNavbarVisibility(){
     if (navBarShown){
-        navBar.style.height = "0";
         hideNavbar();
+        navBar.style.height = "0";
+        navBar.style.maxHeight = "0";
     } else {
         navBar.style.height = "140px";
+        navBar.style.maxHeight = "160px";
         for (var i = 0; i < navbarLines.length; i++) {
             navbarLines[i].style.display = "none";
         }
