@@ -158,8 +158,9 @@ function toggleNavbarVisibility(){
             navbarLines[i].style.display = "none";
         }
         navBarX.style.display = "block";
+        navBarShown = true;
     }
-    navBarShown = !navBarShown;
+    
 }
 
 function hideNavbar() {
@@ -167,6 +168,7 @@ function hideNavbar() {
         navbarLines[i].style.display = "block";
     }
     navBarX.style.display = "none";
+    navBarShown = false;
 }
 
 function hidNav(){
@@ -174,7 +176,6 @@ function hidNav(){
     if (width <= 736 &&  navBarShown){
         hideNavbar();
         navBar.style.height = "0";
-        navBarShown = !navBarShown;
     }
 }
 
