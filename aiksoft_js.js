@@ -160,10 +160,8 @@ function toggleNavbarVisibility(){
     if (navBarShown){
         hideNavbar();
         navBar.style.height = "0";
-        navBar.style.maxHeight = "0";
     } else {
-        navBar.style.height = "140px";
-        navBar.style.maxHeight = "160px";
+        navBar.style.height = "160px";
         for (var i = 0; i < navbarLines.length; i++) {
             navbarLines[i].style.display = "none";
         }
