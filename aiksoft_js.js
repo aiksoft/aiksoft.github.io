@@ -17,7 +17,7 @@ function loadHome() {
         if (width > 736) {
             navBar.style.display = "block";
         } else {
-            hideNavbar();
+            hideNavBar();
         }
     });
 }
@@ -150,8 +150,8 @@ $("img").mousedown(function (e) {
 
 function toggleNavbarVisibility(){
     if (navBarShown){
-        hideNavbar();
         navBar.style.height = "0";
+        hideNavBar();
     } else {
         navBar.style.height = "160px";
         for (var i = 0; i < navbarLines.length; i++) {
@@ -163,7 +163,7 @@ function toggleNavbarVisibility(){
     
 }
 
-function hideNavbar() {
+function hideNavBar() {
     for (var i = 0; i < navbarLines.length; i++) {
         navbarLines[i].style.display = "block";
     }
@@ -174,7 +174,7 @@ function hideNavbar() {
 function hidNav(){
     var width = $(window).width();
     if (width <= 736 &&  navBarShown){
-        hideNavbar();
+        hideNavBar();
         navBar.style.height = "0";
     }
 }
