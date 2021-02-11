@@ -22,21 +22,40 @@
         margin: 0%;
         text-align: center;
     }
+
+    #ftLogo{
+        transform-origin: 50% 50%;
+        animation: rotateLogo 2.2s linear infinite;
+    }
+
+    @keyframes rotateLogo{
+        from{
+            transform: rotateY(0deg);
+        } 
+        to {
+            transform: rotateY(360deg);
+        }
+    }
     
     #moto{
         margin: 0px;
         color:rgb(35, 15, 146);
         text-align: center;
-        animation: blinkMoto  0.5s ease-in-out infinite alternate;
+        animation: blinkMoto  2s ease-in-out infinite alternate;
     }
 
     @keyframes blinkMoto{
-        from{
-            opacity: 1;
-        }
-        to{
-            opacity: 0;
-        }
+        0% {color: blue;}
+        10% {color: cyan;}
+        20% {color: yellow;}
+        30% {color: rgb(161, 98, 15);}
+        40% {color: rgb(77, 10, 65);}
+        50% {color: rgb(133, 64, 133);}
+        60% {color: rgb(36, 100, 81);}
+        70% {color: indigo;}
+        80% {color: chartreuse;}
+        90% {color: rgb(59, 126, 146);}
+        100% {color: whitesmoke;}
     }
     
     #navBar{

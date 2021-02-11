@@ -63,7 +63,7 @@
     #welcomeHeadingText{
         font-size: 35px;
         color: rgb(0, 0, 255);
-        /*text-align: center;*/
+        text-align: center;
         margin-top: 5px;
         text-decoration: none;
     }
@@ -74,6 +74,20 @@
         margin-right: auto;
         padding-top: 1%;
     }  
+
+    #ftLogo{
+        transform-origin: 50% 50%;
+        animation: rotateLogo 2.4s linear infinite;
+    }
+
+    @keyframes rotateLogo{
+        from{
+            transform: rotateY(0deg);
+        } 
+        to {
+            transform: rotateY(360deg);
+        }
+    }
 
     /*
     #logos{
@@ -197,7 +211,7 @@
     #welcomeHeadingText{
         font-size: 1.2em;
         color: rgb(0, 0, 255);
-        /*text-align: center;*/
+        text-align: center;
         margin-top: 5px;
         text-decoration: none;
     }
@@ -307,7 +321,7 @@
     #welcomeHeadingText{
         font-size: 1.2em;
         color: rgb(0, 0, 255);
-        /*text-align: center;*/
+        text-align: center;
         margin-top: 5px;
         text-decoration: none;
     }
