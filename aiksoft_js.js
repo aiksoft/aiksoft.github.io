@@ -53,7 +53,6 @@ function showHome() {
             $(this).css({ "text-decoration": "none", "color": "rgb(126, 167, 126)" });
         },
     );
-
 }
 
 function showContact() {
@@ -82,12 +81,6 @@ function showContact() {
             $(this).css({ "text-decoration": "none", "color": "rgb(126, 167, 126)" });
         },
     );
-
-    var footer = document.getElementById("footer");
-    var head = document.getElementById("heading");
-    var nav = document.getElementById("navBar");
-    var tot = nav.offsetHeight;
-    document.getElementById("infoP").innerHTML = "" + tot;
 }
 
 function showAbout() {
@@ -147,7 +140,6 @@ function showDeskMobServ() {
             $(this).css({ "text-decoration": "none", "color": "rgb(126, 167, 126)" });
         },
     );
-
 }
 
 $("img").mousedown(function (e) {

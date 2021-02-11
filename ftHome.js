@@ -1,13 +1,8 @@
-var alpha = 1.0;
-var decrsnAlpha = true;
-var animFumc;
 var autoSlideFunc;
 var autoPrevFont;
-var cycle = 0;
 var slideIndex = 1;
 var prevSlide = 0;
 var slideStarted = false;
-var count = 0;
 var currenEmojiScrnShot = 1;
 var slides = document.getElementsByClassName("mySlides");
 var dots = document.getElementsByClassName("dot");
@@ -17,47 +12,10 @@ var currEmojiPreview = document.getElementById("emojiPreview");
 
 function animateHeading() {
     loadHome();
-    // animFumc = setInterval(glowHeading, 15);
     showFirstSlide();
     autoSlideFunc = setInterval(doAutoSlide, 5000);
     autoPrevFont = setInterval(autoShowNextFontPrev, 4000);
 }
-
-function glowHeading() {
-    console.log(alpha);
-
-    if (decrsnAlpha) {
-        decrAlpha();
-    } else {
-        incrAlpha();
-    }
-
-    var welcomeHeading = document.getElementById('moto');
-    var colString = "rgba(0, 0, 255," + alpha + ")";
-    welcomeHeading.style.color = colString;
-
-    if (cycle === 500) {
-        clearInterval(animFumc);
-    }
-}
-
-function incrAlpha() {
-    alpha += 0.02;
-    if (alpha >= 1.0) {
-        decrsnAlpha = true;
-        cycle += 1;
-    }
-}
-
-function decrAlpha() {
-    alpha -= 0.02;
-    if (alpha <= 0.0) {
-        decrsnAlpha = false;
-    }
-}
-
-
-//*******************************************************************************************************************************
 
 function loadHome() {
     showHome();
