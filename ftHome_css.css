@@ -41,7 +41,7 @@
         margin: 0px;
         color:rgb(35, 15, 146);
         text-align: center;
-        animation: blinkMoto  2s ease-in-out infinite alternate;
+        animation: blinkMoto  5s linear infinite alternate;
     }
 
     @keyframes blinkMoto{
@@ -55,7 +55,7 @@
         70% {color: indigo;}
         80% {color: chartreuse;}
         90% {color: rgb(59, 126, 146);}
-        100% {color: whitesmoke;}
+        100% {color: red;}
     }
     
     #navBar{
