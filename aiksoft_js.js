@@ -2,6 +2,7 @@ var navBar;
 var navBarX;
 var navbarLines;
 var navbarIsVisible;
+var navBarShown = false;
 
 function loadHome() {
     navBar = document.getElementById("navBar");
@@ -155,6 +156,20 @@ $("img").mousedown(function (e) {
     }
 });
 
+function toggleNavbarVisibility(){
+    if (navBarShown){
+        navBar.style.height = "0";
+        hideNavbar();
+    } else {
+        navBar.style.height = "140px";
+        for (var i = 0; i < navbarLines.length; i++) {
+            navbarLines[i].style.display = "none";
+        }
+        navBarX.style.display = "block";
+    }
+    navBarShown = !navBarShown;
+}
+
 function toggleMenuVisibility() {
 
     if (navBar.style.display === "block") {
@@ -173,7 +188,6 @@ function toggleMenuVisibility() {
 }
 
 function hideNavbar() {
-    navBar.style.display = "none";
     for (var i = 0; i < navbarLines.length; i++) {
         navbarLines[i].style.display = "block";
     }
@@ -182,8 +196,10 @@ function hideNavbar() {
 
 function hidNav(){
     var width = $(window).width();
-    if (width <= 736 &&  navBar.style.display === "block"){
+    if (width <= 736 &&  navBarShown){
         hideNavbar();
+        navBar.style.height = "0";
+        navBarShown = !navBarShown;
     }
 }
 
