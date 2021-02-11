@@ -634,14 +634,16 @@ img{
         clear: both;
         display: block;
         padding-left: 5px;
-        position: relative;
     }
     
     #navBar div div{
         display: none;
-        position: absolute;
+        /*position: absolute;*/
+        position: relative;
         padding-left: 10px;
         width: fit-content;
+        background-color: transparent;
+        box-shadow: none;
     }
 
     #navBarWrapper{
@@ -649,6 +651,7 @@ img{
     }
     
     #products:hover div{
+        position: static;
         display: block;
     }
     
@@ -658,6 +661,7 @@ img{
     
     .headLink{
         font-size: 20px;
+        display: block;
     }
     
     a:hover{

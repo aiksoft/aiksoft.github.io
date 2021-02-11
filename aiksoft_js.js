@@ -170,23 +170,6 @@ function toggleNavbarVisibility(){
     navBarShown = !navBarShown;
 }
 
-function toggleMenuVisibility() {
-
-    if (navBar.style.display === "block") {
-        hideNavbar();
-    } else {
-        navBar.style.display = "block";
-        for (var i = 0; i < navbarLines.length; i++) {
-            navbarLines[i].style.display = "none";
-        }
-        navBarX.style.display = "block";
-    }
-
-    var sizeTest = document.getElementById("sizeTest")
-    var navWrapHeight = document.getElementById("navBarWrapper");
-    sizeTest.innerHTML = "" + navWrapHeight.offsetHeight;
-}
-
 function hideNavbar() {
     for (var i = 0; i < navbarLines.length; i++) {
         navbarLines[i].style.display = "block";
