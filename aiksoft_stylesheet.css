@@ -1,3 +1,7 @@
+@font-face{
+    font-family: "Albertiny Demo";
+    src: url("AlbertinyDemo_x3or8.ttf") format("truetype");
+}
 
 html, body{
     height: 100%;

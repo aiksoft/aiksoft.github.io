@@ -1,4 +1,9 @@
 
+    @font-face{
+        font-family: 'Alliance Personal Use';
+        src: url('AlliancePersonalUse_6z0o.ttf') format("truetype");
+    }
+
     html, body{
         width: 100%;
         height: 100%;
@@ -36,11 +41,36 @@
             transform: rotateY(360deg);
         }
     }
+
+    #ftHeading{
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+    }
+
+    #ft{
+        font-size: 3.0em;
+        margin: 0;
+        padding: 0;
+        color: rgb(245, 221, 83);
+        font-family: 'Alliance Personal Use','Times New Roman', Times, serif;
+    }
+
+    #copyright{
+        padding: 0;
+        margin: 0;
+        font-size: .6em;
+        line-height: 0;
+        position: absolute;
+        top: 25px;
+        right: -35px;
+    }
     
     #moto{
         margin: 0px;
         color:rgb(35, 15, 146);
-        text-align: center;
+        text-align: right;
         animation: blinkMoto  5s linear infinite alternate;
     }
 
