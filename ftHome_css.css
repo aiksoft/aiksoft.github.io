@@ -72,7 +72,6 @@
         color:rgb(35, 15, 146);
         text-align: right;
         animation: blinkMoto  5s linear infinite alternate;
-        width: fit-content;
     }
 
     @keyframes blinkMoto{
