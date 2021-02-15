@@ -443,6 +443,7 @@ legend{
 #submitButt{
     font-size: 1.2em;
     color: lightsalmon;
+    float: right;
 }
 /**************************************************************End big screen sizes*********************************/
 @media (max-width: 1024px){
