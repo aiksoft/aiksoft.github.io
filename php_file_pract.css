@@ -1,0 +1,162 @@
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0%;
+}
+
+#heading{
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    background-color: burlywood;
+    padding-top: 10px;
+}
+
+#compName{
+    font-size: 50px;
+    padding: 0px;
+    margin: 0px;
+    color:rgb(65, 21, 65)
+}
+
+#moto{
+    padding: 0px;
+    margin: 0px;
+}
+p{
+    padding: 0px;
+}
+
+#formTitle{
+    font-size: 25px;
+    color: green;
+}
+
+.inputContainer{
+    float: left;
+}
+
+input, label, select{
+    margin-left: 10px;
+}
+
+fieldset label{
+    color: burlywood;
+}
+
+fieldset{
+    /*
+    margin-top: 10px;
+    margin-bottom: 10px; */
+    margin: 10px;
+}
+
+fieldset legend{
+    color: burlywood;
+}
+
+#footer{
+    background-color: burlywood;
+    padding-top:5px;  
+    margin-top: 10px;
+    clear: both;
+}
+
+#footer_div{
+    display: -moz-box;
+    display: -webkit-box;
+    -moz-box-orient: horizontal;
+    -webkit-box-orient: horizontal; 
+    width: 40%;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 5px;
+    padding-top:5px;  
+}
+
+#footer_div p{
+    padding-left: 5px;
+    margin:auto;
+}
+
+.socialMediaHandle{   
+    padding-left: 20px;
+} 
+#socialMediaLinks{
+    margin-left: auto;
+    margin-right: auto;
+    width:20%;
+}
+
+a img{
+    border-width: 0px;
+}
+
+#nextButt, #nextButt2{
+    font-size: 20px;
+    /*margin-left: 48%;*/
+    float:right;
+    margin: 10px;
+    color: burlywood;
+}
+
+#backButt{
+    font-size: 20px;
+    float:left;
+    margin: 10px;
+    color: red;
+}
+
+#submitButt{
+    color: green;
+    font-size: 20px;
+    float: left;
+    margin-top: 10px;
+}
+
+#coursesDiv p{
+    float: left;
+    margin: 0px;
+}
+
+.uploadPhotoSet input{
+    clear: both;
+}
+
+.uploadPhotoSet img{
+    float: left;
+}
+
+.fieldName{
+    font-weight: bold;
+    font-size: 1.1em;
+    color: burlywood;
+}
+
+#preview{
+    padding-left: 10px;
+}
+
+.req{
+    border: 1px solid red;
+}
+
+#thirdPage{
+    min-height: 350px;
+    padding-left: 10px;
+}
+
+#prompt{
+    font-size: 35px;
+    color: burlywood;
+}
+
+#email:invalid {
+    color: white;
+    background-color: red;
+}
+
+#serverDiv{
+    padding-left: 10px;
+}
+

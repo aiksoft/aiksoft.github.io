@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+<head>
+    <title>Registration Form</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="php_file_pract.css" />
+    <script src=php_file_pract.js></script>
+    <script src=jquery-3.5.1.js></script>
+</head>
+
+<body onload="showFirstPage()">
+    <div id="heading">
+        <img src="icons/AikSoft_Logo.PNG" alt="logo" width="200">
+        <p id="compName">Aikien Softwares Academy</p>
+        <p id="moto">...easier with software.</p>
+        <p id="formTitle">Registration Form</p>
+    </div>
+
+    <div id="content">
+        <form action="php_file_pract.php" method="POST" id="mainForm" enctype="multipart/form-data">
+            <div id="firstPage">
+                <fieldset>
+                    <legend>Basic Details:</legend>
+                    <p class="inputContainer">
+                        <label>Title:</label> <br>
+                        <select name="title" id="title">
+                            <option value="Mr.">Mr.</option>
+                            <option value="Mrs.">Mrs.</option>
+                            <option value="Ms.">Ms.</option>
+                            <option value="Dr.">Dr.</option>
+                            <option value="Prof.">Prof.</option>
+                            <option value="Engr.">Engr.</option>
+                            <option value="Revd.">Revd.</option>
+                            <option value="Pst.">Pst.</option>
+                        </select>
+                    </p>
+
+                    <p class="inputContainer">
+                        <label>Surname:</label> <br>
+                        <input type="text" name="surName" id="surName" class="isRequired">
+                    </p>
+
+                    <p class="inputContainer">
+                        <label>Firstname:</label> <br>
+                        <input type="text" name="firstName" id="firstName" class="isRequired">
+                    </p>
+
+                    <p class="inputContainer">
+                        <label>Other name(s):</label> <br>
+                        <input type="text" name="otherNames" id="otherNames">
+                    </p>
+
+                    <p class="inputContainer">
+                        <label>Date of Birth:</label><br>
+                        <input type="date" id="dob" name="dob" class="isRequired">
+                    </p>
+
+                    <p class="inputContainer">
+                        <label>State of Origin:</label> <br>
+                        <select name="stateOfOrigin" id="stateOfOrigin">
+                            <option value="Abia">Abia</option>
+                            <option value="Adamawa">Adamawa</option>
+                            <option value="Akawa-Ibom">Akawa-Ibom</option>
+                            <option value="Anambra">Anambra</option>
+                            <option value="Bauchi">Bauchi</option>
+                            <option value="Bayelsa">Bayelsa</option>
+                            <option value="Benue">Benue</option>
+                            <option value="Borno">Borno</option>
+                            <option value="Cross River">Cross River</option>
+                            <option value="Delta">Delta</option>
+                            <option value="Ekiti">Ekiti</option>
+                            <option value="Ebonyi">Ebonyi</option>
+                            <option value="Edo">Edo</option>
+                            <option value="Enugu">Enugu</option>
+                            <option value="FCT">FCT</option>
+                            <option value="Gombe">Gombe</option>
+                            <option value="Imo">Imo</option>
+                            <option value="Jigawa">Jigawa</option>
+                            <option value="Kaduna">Kaduna</option>
+                            <option value="Kastina">Kastina</option>
+                            <option value="Kano">Kano</option>
+                            <option value="Kebbi">Kebbi</option>
+                            <option value="Kogi">Kogi</option>
+                            <option value="Kwara">Kwara</option>
+                            <option value="Lagos">Lagos</option>
+                            <option value="Nassarawa">Nassarawa</option>
+                            <option value="Niger">Niger</option>
+                            <option value="Ogun">Ogun</option>
+                            <option value="Ondo">Ondo</option>
+                            <option value="Osun">Osun</option>
+                            <option value="Oyo">Oyo</option>
+                            <option value="Plateau">Plateau</option>
+                            <option value="Rivers">Rivers</option>
+                            <option value="Sokoto">Sokoto</option>
+                            <option value="Taraba">Taraba</option>
+                            <option value="Yobe">Yobe</option>
+                            <option value="Zamfara">Zamfara</option>
+                        </select>
+                    </p>
+
+                    <p class="inputContainer">
+                        <label>LGA:</label><br>
+                        <input type="text" name="lga" id="lga" class="isRequired">
+                    </p>
+
+                    <p class="inputContainer">
+                        <label>Gender</label><br>
+                        <select name="gender" id="gender">
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                        </select>
+                    </p>
+
+                    <p class="inputContainer">
+                        <label>Marital Status:</label><br>
+                        <select name="maritalStatus" id="maritalStatus">
+                            <option value="Single">Single</option>
+                            <option value="Married">Married</option>
+                            <option value="Divorced">Divorced</option>
+                        </select>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Contact Details</legend>
+                    <p class="inputContainer">
+                        <label>Permanent Address:</label> <br>
+                        <textarea name="permAddress" cols="30" rows="5" id="permAddress" class="isRequired"></textarea>
+                    </p>
+
+                    <p class="inputContainer">
+                        <label>Mobile No.:</label><br>
+                        <input type="number" name="mobileNo" id="mobileNo" class="isRequired">
+                    </p>
+
+                    <p class="inputContainer">
+                        <label>Email:</label><br>
+                        <input type="email" name="email" id="email" class="isRequired">
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Education</legend>
+                    <p>
+                        <label>Education Level</label><br>
+                        <select name="eduLevel" id="eduLevel">
+                            <option value="Primary">Primary</option>
+                            <option value="Secondary">Secondary</option>
+                            <option value="A-Level">A-Level</option>
+                            <option value="College">College</option>
+                            <option value="Degree">Degree</option>
+                            <option value="PGD">PGD</option>
+                            <option value="Masters">Masters</option>
+                            <option value="PHD">PHD</option>
+                        </select>
+                    </p>
+
+                    <div id="coursesDiv">
+                        <label id="coursesLabel">Select Course:</label> <br>
+                        <p><input type="checkbox" value="Java" name="javaCB" id="javaCB" class="courseCB" onchange="appendSelectedCourses()">Java</p>
+                        <p><input type="checkbox" value="Python" name="pyCB" id="pyCB" class="courseCB" onchange="appendSelectedCourses()">Python</p>
+                        <p><input type="checkbox" value="C++" name="cppCB" id="cppCB" class="courseCB" onchange="appendSelectedCourses()">C++</p>
+                        <p><input type="checkbox" value="C" name="cCB" id="cCB" class="courseCB" onchange="appendSelectedCourses()">C</p>
+                        <p><input type="checkbox" value="C#" name="cSharpCB" id="cSharpCB" class="courseCB" onchange="appendSelectedCourses()">C#</p>
+                        <p><input type="checkbox" value="MySQL" name="mySQLCB" id="mySQLCB" class="courseCB" onchange="appendSelectedCourses()">MySQL</p>
+                        <p><input type="checkbox" value="Android" name="androidCB" id="androidCB"
+                                class="courseCB">Android</p>
+                        <p><input type="checkbox" value="JavaScript" name="jsCB" id="jsCB" class="courseCB" onchange="appendSelectedCourses()">JavaScript
+                        </p>
+                        <p><input type="checkbox" value="HTML" name="htmlCB" id="htmlCB" class="courseCB" onchange="appendSelectedCourses()">HTML</p>
+                        <p><input type="checkbox" value="CSS" name="cssCB" id="cssCB" class="courseCB" onchange="appendSelectedCourses()">CSS</p>
+                        <p><input type="checkbox" value="PHP" name="phpCB" id="phpCB" class="courseCB" onchange="appendSelectedCourses()">PHP</p>
+                        <p><input type="text" name="courseSel" id="courseSel" readonly style="display: none;"></p>
+                    </div>
+                </fieldset>
+
+                <fieldset class="uploadPhotoSet">
+                    <legend>Passpoert</legend>
+                    <img src="icons/uploadPhoto.PNG" alt="uploadPhoto" height="120" id="passport">
+                    <input type="file" name="fileInput" id="fileInput" onchange="readURL(this)" class="isRequired" accept="image/*">
+                </fieldset>
+                <button type="button" id="nextButt" onclick="verifyReqFields()">Next>></button>
+
+            </div>
+            <!--end first page-->
+            <div id="secondPage">
+                <div id="preview">
+                    <img src="icons/uploadPhoto.PNG" alt="uploadPhoto" height="120" id="passportPrev">
+                    <p id="infoReview"></p>
+                </div>
+                <button type="button" id="backButt" onclick="showFirstPage()">&lt;&lt;Back</button>
+                <button type="button" id="nextButt2" onclick="show3rdPage()">Next>></button>
+            </div>
+            <!--end second page-->
+
+            <div id="thirdPage">
+                <div id="captchaDiv">
+                    <h1 id="captchaHeading">Please prove you are not a robot</h1>
+                    <p>
+                        <span id="question"></span>
+                        <input type="number" name="answer" id="answer">
+                        <button type="button" id="goButt" onclick="verifyCaptcha()">Go</button>
+                    </p>
+                </div>
+                <p id="prompt"></p>
+                <input type="button" id="submitButt" value="Submit" name="submitButt" onclick="submitForm()">
+                <!--<input type="submit" id="submitButt" value="Submit" name="submitButt">-->
+            </div>
+            <!--end third page-->
+        </form>
+    </div>
+    <!--end content div-->
+
+    <div id="footer">
+        <div id="socialMediaLinks">
+            <a href="https://facebook.com" class="socialMediaHandle"><img src="icons/facebook_logo.png" alt="Facebook"
+                    width="25"></a>
+            <a href="https://youtube.com" class="socialMediaHandle"><img src="icons/youtube_logo.png" alt="YouTube"
+                    width="25"></a>
+            <a href="https://twitter.com" class="socialMediaHandle"><img src="icons/twitter_logo.png" alt="Twitter"
+                    width="25"></a>
+            <a href="https://linkedin.com" class="socialMediaHandle"><img src="icons/linkedin_logo.png" alt="LinkedIn"
+                    width="25"></a>
+            <a href="https://instagram.com" class="socialMediaHandle"><img src="icons/instagram_logo.png"
+                    alt="Instagram" width="25"></a>
+        </div>
+        <div id="footer_div">
+            <div><img src="icons/AikSoft_Logo.PNG" alt="logo" width="75" height="50" class="logo" /></div>
+            <p>Copyright(C) 2020. Aikien Softwares, Inc. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+
+</html>

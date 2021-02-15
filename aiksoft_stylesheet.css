@@ -417,6 +417,31 @@ img{
     clear: both;
 }
 
+#enquiryDetails{
+    margin-top: 5px;
+}
+
+fieldset{
+    width: fit-content;
+}
+
+legend{
+    font-size: 1.9em;
+    font-weight: bold;
+}
+
+#baselineTest{
+    vertical-align: text-top;
+}
+
+#enquiryDetails{
+    vertical-align: top;
+}
+
+#submitButt{
+    font-size: 1.2em;
+    color: lightsalmon;
+}
 /**************************************************************End big screen sizes*********************************/
 @media (max-width: 1024px){
     #welcomeMessage{
