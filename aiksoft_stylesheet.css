@@ -174,12 +174,12 @@ a img{
     margin-top: 0; 
     color: rgb(121, 60, 150);
     font-weight: bold;
-    
 }
 
 #welcomePara{
     text-align: center;
     position: relative;
+    margin: 0;
 }
 
 #welcomeMessage{
@@ -205,7 +205,7 @@ a img{
 #welcomeMessage2{
     color: rgb(197, 48, 172);
     font-size: 1.2em;
-    margin-top: 4.0em;
+    padding-top: 4.0em;
     display: block;
     font-weight: bold;
     font-style: italic;
@@ -479,7 +479,7 @@ legend{
     #welcomeMessage2{
         color: rgb(197, 48, 172);
         font-size: 1.2em;
-        margin-top: 3.6em;
+        padding-top: 3.6em;
         display: block;
         font-weight: bold;
         font-style: italic;
@@ -575,7 +575,7 @@ legend{
         animation: glow3 1s ease-in-out infinite alternate;
         text-shadow: 0 0 20px rgb(48, 20, 173);
         left: 10%;
-        top: 0;
+        top: 5px;
     }
 
     @keyframes glow3{
@@ -599,6 +599,7 @@ legend{
         background-color: rgba(255, 160, 122, 0.562);
         width: 100%;
         height: 240px;
+        margin-bottom: 0;
     }
     
     #product_img{
@@ -772,6 +773,9 @@ legend{
 
     .contentWrap{
         min-height: calc(100vh - 173px);
+        margin: 0;
+        padding: 0;
+
     }
     
     .content{
@@ -781,6 +785,9 @@ legend{
         */
         padding-left: 10px;
         padding-right: 10px;
+        padding-left: 10px;
+        padding-bottom: 15px;
+        margin: 0;
     }
     
     .title{
@@ -793,7 +800,7 @@ legend{
     
     #welcomeMessage2{
         color: rgb(197, 48, 172);
-        margin-top: 2.0em;
+        padding-top: 2.0em;
         text-shadow: 0 0 5px blue;
     }
     
@@ -835,7 +842,7 @@ legend{
     }
 
     #contact h1, #about h1, #about h2, #servicesDiv h1{
-        background-color: rgba(255, 255, 255, 0.719);
+        /*background-color: rgba(255, 255, 255, 0.719);*/
         width: fit-content;
         border-radius: 20px;
         padding-left: 10px;
@@ -843,7 +850,7 @@ legend{
     }
 
     .servInfo{
-        background-color: rgba(255, 255, 255, 0.774);
+        /*background-color: rgba(255, 255, 255, 0.774);*/
         border-radius: 20px;
         padding: 10px;
     }
@@ -996,7 +1003,8 @@ legend{
         width: -moz-min-content;
         margin-left: auto;
         margin-right: auto;
-        margin-bottom: 15px;
+        /*margin-bottom: 15px;*/
+        margin-bottom: 0;
         border-radius: 20px;
     }
 
@@ -1035,7 +1043,7 @@ legend{
         animation: glow3 1s ease-in-out infinite alternate;
         text-shadow: 0 0 20px rgb(48, 20, 173);
         left: 5%;
-        top: 0;
+        top: 5px;
     }
 
     @keyframes glow3{
@@ -1237,6 +1245,8 @@ legend{
 
     .contentWrap{
         min-height: calc(100vh - 173px);
+        padding: 0;
+        margin: 0;
     }
     
     .content{
@@ -1247,6 +1257,7 @@ legend{
         */
         padding-left: 10px;
         padding-right: 10px;
+        margin: 0;
     }
     
     .title{
@@ -1259,7 +1270,7 @@ legend{
     
     #welcomeMessage2{
         color: rgb(197, 48, 172);
-        margin-top: 5.2em;
+        padding-top: 5.2em;
         text-shadow: 0 0 5px blue;
     }
     
@@ -1302,7 +1313,7 @@ legend{
     }
 
     #contact h1, #about h1, #about h2, #servicesDiv h1{
-        background-color: rgba(255, 255, 255, 0.719);
+        /*background-color: rgba(255, 255, 255, 0.719);*/
         width: fit-content;
         border-radius: 20px;
         padding-left: 10px;
@@ -1310,7 +1321,7 @@ legend{
     }
 
     .servInfo{
-        background-color: rgba(255, 255, 255, 0.774);
+        /*background-color: rgba(255, 255, 255, 0.774);*/
         border-radius: 20px;
         padding: 10px;
     }
