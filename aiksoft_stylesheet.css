@@ -417,12 +417,14 @@ img{
     clear: both;
 }
 
-#enquiryDetails{
-    margin-top: 5px;
+#enquiryForm{
+    width: fit-content;
+    background-color: rgba(255, 255, 255, 0.582);
+    margin-bottom: 10px;
 }
 
-fieldset{
-    width: fit-content;
+#enquiryDetails{
+    margin-top: 5px;
 }
 
 legend{
