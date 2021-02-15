@@ -667,6 +667,11 @@ legend{
         border: 1px solid white;
         text-align: center;
     }
+
+    .navbarLines{
+        border: none;
+        border-top: 2px solid white;
+    }
     
     #navBar div{
         width: fit-content;
@@ -1131,6 +1136,11 @@ legend{
         padding: 0;
         display: none;
         border: 1px solid white;
+    }
+
+    .navbarLines{
+        border: none;
+        border-top: 2px solid white;
     }
     
     #navBar div{
