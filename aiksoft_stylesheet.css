@@ -166,6 +166,7 @@ a img{
     /*min-height: 63.4vh;*/
     padding-left: 10px;
     padding-right: 10px;
+    background-color: rgba(0, 0, 0, 0.541);
 }
 
 .title{
@@ -234,7 +235,7 @@ a img{
 }
 
 #contact h1, #about h1, #about h2, #servicesDiv h1{
-    background-color: rgba(255, 255, 255, 0.719);
+    /*background-color: rgba(255, 255, 255, 0.719);*/
     width: fit-content;
     border-radius: 20px;
     padding-left: 10px;
@@ -252,7 +253,7 @@ a img{
 }
 
 .servInfo{
-    background-color: rgba(255, 255, 255, 0.774);
+    /*background-color: rgba(255, 255, 255, 0.774);*/
     border-radius: 20px;
     padding: 10px;
 }
@@ -419,7 +420,7 @@ img{
 
 #enquiryForm{
     width: fit-content;
-    background-color: rgba(255, 255, 255, 0.582);
+    /*background-color: rgba(255, 255, 255, 0.582);*/
     margin-bottom: 10px;
 }
 
