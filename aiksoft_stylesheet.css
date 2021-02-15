@@ -569,7 +569,7 @@ img{
         padding: 0;
         background-color: rgba(255, 160, 122, 0.562);
         width: 100%;
-        height: 230px;
+        height: 240px;
     }
     
     #product_img{
@@ -612,7 +612,7 @@ img{
         padding: 0;
         padding-top: 10px;
         position: absolute;
-        top: 230px;
+        top: 240px;
         left: 0;
         z-index: 2;
         transition: height 0.3s linear;
@@ -1029,7 +1029,7 @@ img{
         padding: 0;
         background-color: rgba(255, 160, 122, 0.562);
         width: 100%;
-        height: 270px;
+        height: 280px;
     }
     
     #product_img{
@@ -1071,7 +1071,7 @@ img{
         padding: 0;
         padding-top: 10px;
         position: absolute;
-        top: 270px;
+        top: 280px;
         left: 0;
         z-index: 2;
         transition: height 0.3s linear;
