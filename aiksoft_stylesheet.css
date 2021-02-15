@@ -640,7 +640,7 @@ legend{
         clear: both;
         display: block;
         padding: 0;
-        padding-top: 10px;
+        /*padding-top: 10px;*/
         position: absolute;
         top: 240px;
         left: 0;
@@ -1106,7 +1106,7 @@ legend{
         clear: both;
         display: block;
         padding: 0;
-        padding-top: 10px;
+        /*padding-top: 10px;*/
         position: absolute;
         top: 280px;
         left: 0;
