@@ -71,6 +71,7 @@
         margin: 0px;
         color:rgb(35, 15, 146);
         text-align: right;
+        white-space: nowrap;
         animation: blinkMoto  5s linear infinite alternate;
     }
 
