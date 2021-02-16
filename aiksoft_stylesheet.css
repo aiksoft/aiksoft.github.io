@@ -446,6 +446,97 @@ legend{
     color: lightsalmon;
     float: right;
 }
+/*------------------------------------------------------------------------------------------------------------------------*/
+
+#samplesWrapper{
+    width: 550px;
+    height: fit-content;
+    position: relative;
+    margin: auto;
+    margin-top: 15px;
+    /*min-width: 400px;*/
+}
+
+.mySlides{
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: opacity 3.0s ease;
+}
+
+.showSlide{
+    opacity: 1;
+}
+
+#firstPic{
+    position: relative;
+    left: 0;
+    top: 0;
+}
+
+.prev, .next{
+    cursor:pointer;
+    position:absolute;
+    top: 50%;
+    width: auto;
+    /*margin-top: -15px;*/
+    padding: 5px;
+    color: gray;
+    font-weight: bold;
+    font-size: 25px;
+    transition: .2s ease;
+    user-select: none;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.next{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover{
+    color: green;
+}
+
+.text{
+    color: #f2f2f2;
+    font-size: 20px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.numbertext{
+    color:#f2f2f2;
+    font-size: 20px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.dot{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin:0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover{
+    background-color: #464242;
+}
+
+
+/*------------------------------------------------------------------------------------------------------------------------*/
+
 /**************************************************************End big screen sizes*********************************/
 @media (max-width: 1024px){
     #welcomeMessage{
@@ -633,7 +724,8 @@ legend{
     */
     
     #navBar{
-        background-color: rgba(255, 160, 122, 0.562);
+        /*background-color: rgba(255, 160, 122, 0.562);*/
+        background-color: rgba(173, 107, 81, 0.76);
         width: 100%;
         height: 0;
         overflow: hidden;
@@ -1028,6 +1120,17 @@ legend{
     }
    */
 
+   /*-----------------------------------------------------------------------------------------------------------------------*/
+   #samplesWrapper{
+    width: 90%;
+    height: fit-content;
+    position: relative;
+    margin: auto;
+    margin-top: 15px;
+    /*min-width: 400px;*/
+    }
+/*-----------------------------------------------------------------------------------------------------------------------*/
+
 } 
 
  /*****************************************************End 736px screen size****************************************************/
@@ -1104,7 +1207,7 @@ legend{
     */
 
     #navBar{
-        background-color: rgba(255, 160, 122, 0.562);
+        background-color: rgba(173, 107, 81, 0.76);
         width: 100%;
         height: 0;
         overflow: hidden;
@@ -1501,6 +1604,17 @@ legend{
         clear:both;
     }
    */
+
+   /*-----------------------------------------------------------------------------------------------------------------------*/
+   #samplesWrapper{
+    width: 95%;
+    height: fit-content;
+    position: relative;
+    margin: auto;
+    margin-top: 15px;
+    /*min-width: 400px;*/
+    }
+/*-----------------------------------------------------------------------------------------------------------------------*/
 
 } 
 

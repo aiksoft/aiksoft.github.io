@@ -3,6 +3,13 @@ var navBarX;
 var navbarLines;
 var navbarIsVisible;
 var navBarShown = false;
+var slides = document.getElementsByClassName("mySlides");
+var dots = document.getElementsByClassName("dot");
+var autoSlideFunc;
+var autoPrevFont;
+var slideIndex = 1;
+var prevSlide = 0;
+var slideStarted = false;
 
 function loadHome() {
     navBar = document.getElementById("navBar");
@@ -12,6 +19,9 @@ function loadHome() {
     navbarIsVisible = false;
     showHome();
     $("#homeLink").css({ "text-decoration": "none", "color": "rgb(126, 167, 126)" });
+
+    showFirstSlide();
+    autoSlideFunc = setInterval(doAutoSlide, 5000);
 
     /*
         $(window).resize(function () {
@@ -182,3 +192,54 @@ function hidNav(){
         navBar.style.height = "0";
     }
 }
+
+// Functions for slide show
+function plusSlides(n) {
+    slideIndex += n;
+    showSlides(slideIndex);
+}
+
+function nextSlide(n){
+    clearInterval(autoSlideFunc);
+    plusSlides(n);
+    autoSlideFunc = setInterval(doAutoSlide, 5000);
+}
+
+function currentSlide(n){
+    clearInterval(autoSlideFunc);
+    slideIndex = n;
+    showSlides(slideIndex);
+    autoSlideFunc = setInterval(doAutoSlide, 5000);
+}
+function showSlides(n) {
+    var i;
+
+    if (n > slides.length) {
+        slideIndex = 1;
+    }
+
+    else if (n < 1) {
+        slideIndex = slides.length;
+    }
+
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace("active", "");
+    }  
+
+    slides[prevSlide - 1].className = slides[prevSlide - 1].className.replace("showSlide", "");    
+    dots[slideIndex - 1].className += " active";
+    slides[slideIndex - 1].className += " showSlide";
+    prevSlide = slideIndex;
+}
+
+function showFirstSlide() {
+
+    slides[slideIndex - 1].className += " showSlide";
+    dots[slideIndex - 1].className += " active";
+    prevSlide = slideIndex;
+}
+
+function doAutoSlide() {
+    plusSlides(1);
+}
+// Slide show functions
