@@ -229,7 +229,7 @@ a img{
 }
 
 #servicesDiv, #contact, #about{
-    padding-top: 20px;
+    padding-top: 5px;
     font-size: 20px;
     color: lightsalmon;
 }
@@ -694,7 +694,7 @@ legend{
         padding: 0;
         background-color: rgba(255, 160, 122, 0.562);
         width: 100%;
-        height: 245px;
+        height: 190px;
         margin-bottom: 0;
     }
     
@@ -739,7 +739,7 @@ legend{
         padding: 0;
         /*padding-top: 10px;*/
         position: absolute;
-        top: 245px;
+        top: 190px;
         left: 0;
         z-index: 2;
         transition: height 0.3s linear;
@@ -928,7 +928,7 @@ legend{
     }
     
     #servicesDiv, #contact, #about{
-        padding-top: 20px;
+        padding-top: 5px;
         font-size: 20px;
         color: lightsalmon;
     }
@@ -1179,7 +1179,7 @@ legend{
         padding: 0;
         background-color: rgba(255, 160, 122, 0.562);
         width: 100%;
-        height: 290px;
+        height: 230px;
     }
     
     #product_img{
@@ -1221,7 +1221,7 @@ legend{
         padding: 0;
         /*padding-top: 10px;*/
         position: absolute;
-        top: 290px;
+        top: 230px;
         left: 0;
         z-index: 2;
         transition: height 0.3s linear;
@@ -1414,7 +1414,7 @@ legend{
     }
     
     #servicesDiv, #contact, #about{
-        padding-top: 20px;
+        padding-top: 5px;
         font-size: 20px;
         color: lightsalmon;
     }
@@ -1433,7 +1433,6 @@ legend{
     #contact h1, #about h1, #about h2, #servicesDiv h1{
         /*background-color: rgba(255, 255, 255, 0.719);*/
         width: fit-content;
-        border-radius: 20px;
         padding-left: 10px;
         padding-right: 10px;
     }
