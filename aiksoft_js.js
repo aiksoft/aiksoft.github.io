@@ -68,6 +68,8 @@ function showHome() {
             $(this).css({ "text-decoration": "none", "color": "rgb(126, 167, 126)" });
         },
     );
+
+    closeMenu();
 }
 
 function showContact() {
@@ -96,6 +98,8 @@ function showContact() {
             $(this).css({ "text-decoration": "none", "color": "rgb(126, 167, 126)" });
         },
     );
+
+    closeMenu();
 }
 
 function showAbout() {
@@ -125,6 +129,8 @@ function showAbout() {
             $(this).css({ "text-decoration": "none", "color": "rgb(126, 167, 126)" });
         },
     );
+
+    closeMenu();
 }
 
 function showDeskMobServ() {
@@ -155,6 +161,8 @@ function showDeskMobServ() {
             $(this).css({ "text-decoration": "none", "color": "rgb(126, 167, 126)" });
         },
     );
+
+    closeMenu();
 }
 
 $("img").mousedown(function (e) {
@@ -190,6 +198,14 @@ function hidNav(){
     if (width <= 736 &&  navBarShown){
         hideNavBar();
         navBar.style.height = "0";
+    }
+}
+
+function closeMenu(){
+    var width = $(window).width();
+    if (navBarShown && width <=736){
+        navBar.style.height = "0";
+        hideNavBar();
     }
 }
 
