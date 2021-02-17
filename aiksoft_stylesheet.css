@@ -238,7 +238,7 @@ a img{
     /*background-color: rgba(255, 255, 255, 0.719);*/
     width: fit-content;
     border-radius: 20px;
-    padding-left: 10px;
+    padding-left: 0;
     padding-right: 10px;
 }
 
@@ -897,7 +897,6 @@ legend{
         margin-top: 0px; 
         color: rgb(121, 60, 150);
         font-weight: bold;
-        
     }
     
     #welcomeMessage2{
@@ -947,7 +946,7 @@ legend{
         /*background-color: rgba(255, 255, 255, 0.719);*/
         width: fit-content;
         border-radius: 20px;
-        padding-left: 10px;
+        padding-left: 0;
         padding-right: 10px;
     }
 
@@ -1431,6 +1430,13 @@ legend{
     }
 
     #contact h1, #about h1, #about h2, #servicesDiv h1{
+        /*background-color: rgba(255, 255, 255, 0.719);*/
+        width: fit-content;
+        padding-left: 0;
+        padding-right: 10px;
+    }
+
+    #about h2{
         /*background-color: rgba(255, 255, 255, 0.719);*/
         width: fit-content;
         padding-left: 10px;
