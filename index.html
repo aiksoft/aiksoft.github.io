@@ -342,12 +342,24 @@
                     <p>Working Hrs: 9:00AM - 5:00 PM (Mon - Fri).</p>
                     <!--<p id="infoP"></p>-->
 
-                    <form action="" id="enquiryForm">
+                    <form action="enquiryHandler.php" id="enquiryForm" method="POST">
                         <fieldset>
                             <legend>Enquiry Form</legend>
+                            <label> Title:
+                                <select name="title" id="title">
+                                    <option value="Mr.">Mr.</option>
+                                    <option value="Mrs.">Mrs.</option>
+                                    <option value="Ms.">Ms.</option>
+                                    <option value="Dr.">Dr.</option>
+                                    <option value="Prof.">Prof.</option>
+                                    <option value="Engr.">Engr.</option>
+                                    <option value="Revd.">Revd.</option>
+                                    <option value="Pst.">Pst.</option>
+                                </select>
+                            </label> <br>
                             <label>Name: <input type="text" name="custName" id="custName" required></label> <br>
                             <label>Phone No.: <input type="text" name="custPhoneNo" id="custPhoneNo" required></label> <br>
-                            <label>Email: <input type="email" name="custEmail" id="custEmail" required></label> <br>
+                            <label>Email: <input type="email" name="" id="cucustEmailstEmail" required></label> <br>
                             <label>Subject: <input type="text" name="subject" id="subject" required></label> <br>
                             <p>
                                 <label >Description: </label> <br>
