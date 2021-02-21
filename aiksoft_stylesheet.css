@@ -776,6 +776,7 @@ legend{
         width: fit-content;
         clear: both;
         display: block;
+        padding: 10px;
         padding-left: 5px;
     }
     

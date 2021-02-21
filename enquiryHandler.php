@@ -11,7 +11,7 @@
         <?php
 
             $title = filter_input(INPUT_POST, "title");
-            $custName = filter_input(INPUT_POST, "custname");
+            $custName = filter_input(INPUT_POST, "custName");
             $custPhoneNo = filter_input(INPUT_POST, "custPhoneNo");
             $custEmail = filter_input(INPUT_POST, "custEmail");
             $subject = filter_input(INPUT_POST, "subject");
@@ -20,15 +20,26 @@
             $summary = <<< HERE
 
             <p>
-                Hello $title $custName!!!
+                Hello <b>$title $custName!!!</b>
             </p>
 
             <p>
-                Thanks for contacting AikSoft. We will attend to your enquiry/request and get back
-                to you in the shortest possible time.
+                Thanks for contacting AikSoft!
+            </p>
+
+            <p>
+                We will attend to your enquiry/request as soon as possible and get back to you in the shortest possible time.
             </p>
 HERE;
             print $summary;
+
+            $status = mail("abasiaikien@gmail.com", "Testing PHP", "Hello Mr. Abasi Aikien. FancyText is cool");
+
+            if ($status == true){
+                echo "Message has been sent";
+            } else {
+                echo "An error occured while sending message. Please try again!!!";
+            }
         ?>
     </body>
 

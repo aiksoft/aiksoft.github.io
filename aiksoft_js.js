@@ -35,6 +35,8 @@ function loadHome() {
         } 
     });
     */
+
+    
 }
 
 function showHome() {
