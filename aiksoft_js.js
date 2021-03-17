@@ -76,7 +76,11 @@ function showContact() {
     $("#content div").each(function () {
         $(this).not("#contact").hide();
     });
+    
     $("#contact").show();
+    $("#contact div").each(function () {
+        $(this).show();
+    });
 
     $(".headLink").each(function () {
         $(this).not("#contactLink").css({ "text-decoration": "underline", "color": "rgb(39, 3, 39)" });
