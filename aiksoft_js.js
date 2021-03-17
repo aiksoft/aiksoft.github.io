@@ -35,6 +35,8 @@ function loadHome() {
         } 
     });
     */
+
+    
 }
 
 function showHome() {
@@ -180,7 +182,7 @@ function toggleNavbarVisibility(){
         navBar.style.height = "0";
         hideNavBar();
     } else {
-        navBar.style.height = "160px";
+        navBar.style.height = "260px";
         for (var i = 0; i < navbarLines.length; i++) {
             navbarLines[i].style.display = "none";
         }
